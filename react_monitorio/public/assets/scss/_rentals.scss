@@ -1141,10 +1141,13 @@ body.rentals-wrapper {
 
 .footer-w {
   color: $body-color-light;
+  margin-top: -2px;
   background-image: linear-gradient(to bottom, $body-bg, #fff);
   font-weight: $font-weight-light;
+
   position: relative;
   z-index: 2;
+  margin-top: -2px;
   overflow: hidden;
   .logo-element {
     content: "";
@@ -1216,7 +1219,7 @@ body.rentals-wrapper {
     text-align: center;
     padding: 20px;
     font-size: $font-size-base * 0.8;
-    margin-top: 50px;
+    margin-top: 38px;
     border-top: 1px solid rgba(0,0,0,0.1);
   }
 }

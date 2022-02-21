@@ -1172,6 +1172,13 @@ pre code {
   }
 }
 
+
+.header-s{
+  margin-top: -561px;
+  margin-left: 83px;
+  margin-bottom: -2px;
+}
+
 @media (min-width: 768px) {
   .col-md {
     flex-basis: 0;
@@ -25308,12 +25315,16 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
 }
 
 .footer-w {
+ 
   color: #868686;
+  margin-top: -2px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
   background-image: linear-gradient(to bottom, #fff, #fff);
   font-weight: 300;
+  padding-bottom: 9px;
   position: relative;
   z-index: 2;
+
   overflow: hidden;
 }
 
@@ -25896,6 +25907,11 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   color: #fff;
   text-decoration: none;
   white-space: nowrap;
+}
+
+.mar{
+margin-top: 90px;
+margin-bottom: 2px;
 }
 
 .support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .actions .actions-list a:last-child {
@@ -26679,9 +26695,25 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
 .all-wrapper > .top-bar {
   border-radius: 6px 6px 0px 0px;
 }
+.ws{
+  margin-left: 83px;
+}
 
+*, *::before, *::after {
+    margin-top: 2px;
+    box-sizing: border-box;
+}
+
+.gg{
+margin-top: -73px;
+margin-right: 7px;
+margin-left: 7px;
+background: #fff;
+}
 .content-w > .top-bar {
   padding-left: 0px;
+  margin-left: 30px;
+  background-color: #FFF;
 }
 
 .top-bar {
@@ -28163,6 +28195,7 @@ body.color-scheme-dark .content-w, .content-panel.color-scheme-dark .content-w {
 
 body.color-scheme-dark .all-wrapper.solid-bg-all, .content-panel.color-scheme-dark .all-wrapper.solid-bg-all {
   background-color: #293145;
+
 }
 
 body.color-scheme-dark code, .content-panel.color-scheme-dark code {
@@ -28977,6 +29010,7 @@ Contents:
   }
   .content-box {
     padding: 2rem;
+    margin-left: 70px;
   }
   .all-wrapper {
     max-width: 100%;

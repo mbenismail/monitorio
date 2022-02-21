@@ -3,18 +3,16 @@ function AppUser() {
     return (
 
 
-<div>
+<div className="header-s">  
 
   <div className="all-wrapper with-side-panel solid-bg-all">
     
-    <div className="layout-w">
+   
        
      
       
      
-      <div className="content-w">
-        
-        <div className="content-w">
+      
           <div className="content-box"><div className="row">
               <div className="col-sm-5">
                 
@@ -133,11 +131,11 @@ function AppUser() {
             </div>
             </div>
         </div>
-      </div>
-    </div>
+   
+    
     <div className="display-type" />
-  </div>
-</div>
+ </div>
+
   );
 }
 

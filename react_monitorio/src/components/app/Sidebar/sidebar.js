@@ -2,7 +2,7 @@ function AppSideBar() {
     
     return (
   
-<div className="all-wrapper solid-bg-all">
+<div className="gg">
   <div className="layout-w">
     
     <div className="menu-w color-scheme-dark color-style-bright menu-position-side menu-side-left menu-layout-mini sub-menu-style-over sub-menu-color-bright selected-menu-color-light menu-activated-on-hover menu-has-selected-link">

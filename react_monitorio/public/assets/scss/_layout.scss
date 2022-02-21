@@ -20,11 +20,18 @@ body {
     padding: 0px;
     .all-wrapper {
       max-width: initial;
+      margin-top: -50px;
       border-radius: 0px;
        > .top-bar {
         border-radius: 0px;
        }
     }
+
+    body.full-screen .all-wrapper {
+      max-width: initial;
+      margin-top: -9px;
+      border-radius: 0px;
+  }
     .menu-w,
     .top-bar {
       border-radius: 0px!important;

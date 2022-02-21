@@ -4,7 +4,7 @@ function AppHeader() {
     return (
 <div className="all-wrapper solid-bg-all">
 
- <div className="content-w">
+ <div className="ws">
       <div className="top-bar color-scheme-light">
         <ul>
           <li >
