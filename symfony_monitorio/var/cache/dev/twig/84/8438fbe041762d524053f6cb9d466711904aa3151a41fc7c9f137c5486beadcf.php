@@ -63,6 +63,6 @@ class __TwigTemplate_4ccbb0f2c682c73b20b999c7415f7959c72744145defd849fe5eb4d43c5
     public function getSourceContext()
     {
         return new Source("<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\"><path d=\"M0 0h24v24H0V0z\" fill=\"none\"/><path d=\"M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z\" fill=\"currentColor\"/></svg>
-", "@WebProfiler/Icon/filter.svg", "/home/user/Bureau/Stage-Monitorio/symfony_monitorio/vendor/symfony/web-profiler-bundle/Resources/views/Icon/filter.svg");
+", "@WebProfiler/Icon/filter.svg", "/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/web-profiler-bundle/Resources/views/Icon/filter.svg");
     }
 }

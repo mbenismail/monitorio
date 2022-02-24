@@ -84,6 +84,6 @@ class __TwigTemplate_7813c94ad88d0a396fb2f2d3de1ed8c28da263396d4b6ca7925763f4060
     {{ form_widget(form) }}
     <button class=\"btn\">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}
-", "profil/_form.html.twig", "/home/user/Bureau/Stage-Monitorio/symfony_monitorio/templates/profil/_form.html.twig");
+", "profil/_form.html.twig", "/home/user/Documents/GitHub/monitorio/symfony_monitorio/templates/profil/_form.html.twig");
     }
 }

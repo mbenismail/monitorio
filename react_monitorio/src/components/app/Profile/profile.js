@@ -3,25 +3,30 @@ import React ,{useState,useEffect} from 'react';
 import axios from 'axios';
 
 function AppProfil() {
-  
+  const url ="http://localhost:8000/api/profil/new"
   const [NomProfil,setNomProfil] = useState('');
   const [ProfilDesc,setProfilDesc] = useState('');
-  const [ProfilSys,setProfilSys] = useState('');
+  const [ProfilSys,setProfilSys] = useState(false);
   const [message, setMessage] = useState("");
-
-  let handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-  let res = await fetch("http://localhost:8000/api/profil/new", {
+      console.log(JSON.stringify({
+        NomProfil: NomProfil,
+        ProfilDesc: ProfilDesc,
+      }))
+  let res =  await fetch(url, {
   method: "POST",
+  headers: {'Content-Type': 'application/json' },
   body: JSON.stringify({
     NomProfil: NomProfil,
     ProfilDesc: ProfilDesc,
-    ProfilSys: ProfilSys,
+    ProfilSys:ProfilSys
   }),
 });
 let resJson = await res.json();
-if (res.status === 200) {
+console.log(resJson)
+if (resJson.status === 200) {
   setNomProfil("");
   setProfilDesc("");
   setProfilSys("");
@@ -97,7 +102,7 @@ render()
                       </div>
                       <div className="form-check">
                         <label className="form-check-label"><input value={ProfilSys}
-                        onChange={(e) => setProfilSys(e.target.value)}
+                        onChange={(e) => setProfilSys(!ProfilSys)}
                         className="form-check-input" type="checkbox" /> System Profile</label>
                       </div>
                      

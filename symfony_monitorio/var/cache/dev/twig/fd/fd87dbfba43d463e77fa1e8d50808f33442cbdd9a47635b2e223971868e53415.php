@@ -174,6 +174,6 @@ class __TwigTemplate_2f5bd78c87efd8a448bf1e119ef6f54cb42195526ddf070c515dbdefaf5
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/open.html.twig", "/home/user/Bureau/Stage-Monitorio/symfony_monitorio/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
+", "@WebProfiler/Profiler/open.html.twig", "/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
     }
 }

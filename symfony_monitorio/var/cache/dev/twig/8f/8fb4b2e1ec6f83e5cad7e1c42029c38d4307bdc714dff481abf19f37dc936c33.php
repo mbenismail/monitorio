@@ -247,6 +247,6 @@ class __TwigTemplate_9b2cea71d27da6dc6c6873ecd89d88ab5b0236036716fa28de1b635eb34
 
     <a href=\"{{ path('profil_new') }}\">Create new</a>
 {% endblock %}
-", "profil/index.html.twig", "/home/user/Bureau/Stage-Monitorio/symfony_monitorio/templates/profil/index.html.twig");
+", "profil/index.html.twig", "/home/user/Documents/GitHub/monitorio/symfony_monitorio/templates/profil/index.html.twig");
     }
 }

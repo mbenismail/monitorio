@@ -238,6 +238,6 @@ class __TwigTemplate_b0287d9b96f79a9c5167ccb22ec84cb31470e1ff91fdd80020f3dc64219
 
     {{ include('profil/_delete_form.html.twig') }}
 {% endblock %}
-", "profil/show.html.twig", "/home/user/Bureau/Stage-Monitorio/symfony_monitorio/templates/profil/show.html.twig");
+", "profil/show.html.twig", "/home/user/Documents/GitHub/monitorio/symfony_monitorio/templates/profil/show.html.twig");
     }
 }

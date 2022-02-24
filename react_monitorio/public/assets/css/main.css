@@ -25317,7 +25317,7 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
 .footer-w {
  
   color: #868686;
-  margin-top: -2px;
+  margin-top:2px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
   background-image: linear-gradient(to bottom, #fff, #fff);
   font-weight: 300;
@@ -27791,7 +27791,6 @@ background: #fff;
 }
 
 .floated-customizer-btn.third-floated-btn {
-  right: 400px;
 }
 
 .floated-customizer-btn > .icon-w {
@@ -27873,6 +27872,7 @@ background: #fff;
 .floated-customizer-panel.active {
   visibility: visible;
   opacity: 1;
+  right:20px;
   -webkit-transform: translate3d(0px, 0px, 0) scale(1);
           transform: translate3d(0px, 0px, 0) scale(1);
 }

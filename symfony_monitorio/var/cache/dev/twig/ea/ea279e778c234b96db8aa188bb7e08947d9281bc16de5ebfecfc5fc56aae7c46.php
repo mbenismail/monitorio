@@ -79,6 +79,6 @@ class __TwigTemplate_b5ce4cd940ebbcd400e118e98f7966e2842325ffbdf6402d16faed1950b
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ profil.id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "profil/_delete_form.html.twig", "/home/user/Bureau/Stage-Monitorio/symfony_monitorio/templates/profil/_delete_form.html.twig");
+", "profil/_delete_form.html.twig", "/home/user/Documents/GitHub/monitorio/symfony_monitorio/templates/profil/_delete_form.html.twig");
     }
 }

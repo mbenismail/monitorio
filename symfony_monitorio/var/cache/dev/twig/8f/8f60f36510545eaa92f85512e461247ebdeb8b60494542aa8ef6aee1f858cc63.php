@@ -140,6 +140,6 @@ class __TwigTemplate_6838f542f008ecda0267367b96faa6848429c6bf2b9846f795bb172d21c
 
     {{ include('profil/_delete_form.html.twig') }}
 {% endblock %}
-", "profil/edit.html.twig", "/home/user/Bureau/Stage-Monitorio/symfony_monitorio/templates/profil/edit.html.twig");
+", "profil/edit.html.twig", "/home/user/Documents/GitHub/monitorio/symfony_monitorio/templates/profil/edit.html.twig");
     }
 }

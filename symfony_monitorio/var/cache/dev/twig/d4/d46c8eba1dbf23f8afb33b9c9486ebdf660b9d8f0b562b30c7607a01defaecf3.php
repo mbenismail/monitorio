@@ -127,6 +127,6 @@ class __TwigTemplate_8dad87c6f221ede18473a009785a002792d4d345eebee99eca5872b9b3c
 
     {# <a href=\"{{ path('profil_index') }}\">back to list</a> #}
 {% endblock %}
-", "profil/new.html.twig", "/home/user/Bureau/Stage-Monitorio/symfony_monitorio/templates/profil/new.html.twig");
+", "profil/new.html.twig", "/home/user/Documents/GitHub/monitorio/symfony_monitorio/templates/profil/new.html.twig");
     }
 }

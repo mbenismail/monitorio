@@ -186,6 +186,6 @@ class __TwigTemplate_74acda5522bbc5a686cab1af1cb2535c9d35f24a69d88101bda6ef46432
         {% block body %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/home/user/Bureau/Stage-Monitorio/symfony_monitorio/templates/base.html.twig");
+", "base.html.twig", "/home/user/Documents/GitHub/monitorio/symfony_monitorio/templates/base.html.twig");
     }
 }

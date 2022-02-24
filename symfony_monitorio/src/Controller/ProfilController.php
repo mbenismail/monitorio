@@ -47,6 +47,7 @@ class ProfilController extends AbstractController
             $profil->setProfilSys($request->get('ProfilSys'));
             $entityManager->persist($profil);
             $entityManager->flush();
+            
             $data = [
              'status' => 200,
              'success' => "Profile added successfully",
@@ -56,7 +57,7 @@ class ProfilController extends AbstractController
            }catch (\Exception $e){
             $data = [
              'status' => 422,
-             'errors' => "Data no valid",
+             'errors' => $e,
             ];
             return $this->response($data, 422);
            }
@@ -136,7 +137,7 @@ class ProfilController extends AbstractController
     if (!$profil){
      $data = [
       'status' => 404,
-      'errors' => "Post not found",
+      'errors' => "Profile not found",
      ];
      return $this->response($data, 404);
     }
@@ -145,7 +146,7 @@ class ProfilController extends AbstractController
     $entityManager->flush();
     $data = [
      'status' => 200,
-     'errors' => "Post deleted successfully",
+     'errors' => "Profile deleted successfully",
     ];
     return $this->response($data);
    }

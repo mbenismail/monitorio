@@ -56,28 +56,7 @@ function AppHeader() {
               </ul>
             </div>
           </div>
-          <div className="top-icon top-settings os-dropdown-trigger os-dropdown-position-left">
-            <i className="os-icon os-icon-ui-46" />
-            <div className="os-dropdown">
-              <div className="icon-w">
-                <i className="os-icon os-icon-ui-46" />
-              </div>
-              <ul>
-                <li>
-                  <a href=""><i className="os-icon os-icon-ui-49" /><span>Profile Settings</span></a>
-                </li>
-                <li>
-                  <a href=""><i className="os-icon os-icon-grid-10" /><span>Billing Info</span></a>
-                </li>
-                <li>
-                  <a href=""><i className="os-icon os-icon-ui-44" /><span>My Invoices</span></a>
-                </li>
-                <li>
-                  <a href=""><i className="os-icon os-icon-ui-15" /><span>Cancel Account</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        
           <div className="logged-user-w">
             <div className="logged-user-i">
               <div className="avatar-w">
@@ -101,14 +80,12 @@ function AppHeader() {
                   <i className="os-icon os-icon-wallet-loaded" />
                 </div>
                 <ul>
-                  <li>
-                    <a href=""><i className="os-icon os-icon-mail-01" /><span>Incoming Mail</span></a>
-                  </li>
+ 
                   <li>
                     <a href=""><i className="os-icon os-icon-user-male-circle2" /><span>Profile Details</span></a>
                   </li>
                   <li>
-                    <a href=""><i className="os-icon os-icon-coins-4" /><span>Billing Details</span></a>
+                    <a href=""><i className="os-icon os-icon-coins-4" /><span>Profile Settings</span></a>
                   </li>
                   <li>
                     <a href="#"><i className="os-icon os-icon-others-43" /><span>Notifications</span></a>

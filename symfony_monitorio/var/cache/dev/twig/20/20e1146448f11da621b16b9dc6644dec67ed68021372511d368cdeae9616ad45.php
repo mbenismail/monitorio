@@ -277,6 +277,6 @@ class __TwigTemplate_6dfa9201d19f531d946b8b8941d5eed7439b4211a99f99472ad170aa0cf
     {% set attr = attr|merge({class: (attr.class|default('') ~ ' button')|trim}) %}
     {{- parent() -}}
 {%- endblock button_widget %}
-", "foundation_6_layout.html.twig", "/home/user/Bureau/Stage-Monitorio/symfony_monitorio/vendor/symfony/twig-bridge/Resources/views/Form/foundation_6_layout.html.twig");
+", "foundation_6_layout.html.twig", "/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/twig-bridge/Resources/views/Form/foundation_6_layout.html.twig");
     }
 }

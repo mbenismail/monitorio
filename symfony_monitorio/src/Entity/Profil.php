@@ -162,12 +162,12 @@ class Profil implements \JsonSerializable
    * @throws \Exception
    * @ORM\PrePersist()
    */
-  public function beforeSave(){
+//   public function beforeSave(){
 
-    $this->DateCreat = new \DateTime('now', new \DateTimeZone('Africa/Tunis'));
-    $this->DateModif = new \DateTime('now', new \DateTimeZone('Africa/Tunis'));
+//     $this->DateCreat = new \DateTime('now', new \DateTimeZone('Africa/Tunis'));
+//     $this->DateModif = new \DateTime('now', new \DateTimeZone('Africa/Tunis'));
 
-   }
+//    }
  
    /**
     * Specify data which should be serialized to JSON

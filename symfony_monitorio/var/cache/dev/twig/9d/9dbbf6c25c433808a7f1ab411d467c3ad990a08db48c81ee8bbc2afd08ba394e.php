@@ -413,6 +413,6 @@ class __TwigTemplate_0deeafdd795c9a5821e095a222cbb0bba4dd98fdca83817a6b902436e24
         </div>
     {% endfor %}
 {% endblock %}
-", "@Debug/Profiler/dump.html.twig", "/home/user/Bureau/Stage-Monitorio/symfony_monitorio/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
+", "@Debug/Profiler/dump.html.twig", "/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
     }
 }

@@ -48,14 +48,12 @@ function AppSideBar() {
               <i className="os-icon os-icon-wallet-loaded" />
             </div>
             <ul>
-              <li>
-                <a href=""><i className="os-icon os-icon-mail-01" /><span>Incoming Mail</span></a>
-              </li>
+            
               <li>
                 <a href=""><i className="os-icon os-icon-user-male-circle2" /><span>Profile Details</span></a>
               </li>
               <li>
-                <a href=""><i className="os-icon os-icon-coins-4" /><span>Billing Details</span></a>
+                <a href=""><i className="os-icon os-icon-coins-4" /><span>Profile Settings</span></a>
               </li>
               <li>
                 <a href="#"><i className="os-icon os-icon-others-43" /><span>Notifications</span></a>

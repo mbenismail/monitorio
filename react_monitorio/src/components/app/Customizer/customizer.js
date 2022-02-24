@@ -3,8 +3,26 @@ function AppCustomizer() {
     
     return (
 
-    <div>
-    <div className="floated-customizer-btn third-floated-btn">
+<div>
+  {/*------------------
+        START - Color Scheme Toggler
+        ------------------*/}
+  <div className="floated-colors-btn second-floated-btn">
+    <div className="os-toggler-w">
+      <div className="os-toggler-i">
+        <div className="os-toggler-pill" />
+      </div>
+    </div>
+    <span>Dark </span><span>Colors</span>
+  </div>
+  {/*------------------
+        END - Color Scheme Toggler
+        ------------------*/}{/*------------------
+        START - Demo Customizer
+        ------------------*/}
+
+ 
+   <div className="floated-customizer-btn third-floated-btn">
     <div className="icon-w">
       <i className="os-icon os-icon-ui-46" />
     </div>
@@ -127,7 +145,8 @@ function AppCustomizer() {
               </option>
               <option value="no">
                 No
-              </option></select>
+              </option>
+            </select>
           </div>
           <div className="fcp-field">
             <label htmlFor>Top Bar Color</label>
@@ -141,20 +160,12 @@ function AppCustomizer() {
         </div>
       </div>
     </div>
-  </div>     
-  <div className="floated-colors-btn second-floated-btn">
-    <div className="os-toggler-w">
-      <div className="os-toggler-i">
-        <div className="os-toggler-pill" />
-      </div>
-    </div>
-    <span>Dark </span><span>Colors</span>
   </div>
  
-  <div className="display-type" />
+
 </div>
 
-              );
-}
-
-export default AppCustomizer;
+      );
+    }
+    
+    export default AppCustomizer;
