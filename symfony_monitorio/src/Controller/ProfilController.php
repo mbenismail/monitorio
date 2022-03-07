@@ -11,40 +11,73 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-
+use OpenApi\Annotations as OA;
+use Nelmio\ApiDocBundle\Annotation\Model;
+use Nelmio\ApiDocBundle\Annotation\Security;
 /**
- * @Route("/api", name= "profils")
+ * @Route("api/profile", name= "profils")
  */
 class ProfilController extends AbstractController
 {
     /**
-     * @Route("/profils", name="profil_index", methods={"GET"})
-     */
-    public function index(ProfilRepository $profilRepository): Response
+     * list all profiles
+     * @Route("/index", methods={"GET"})
+     * @OA\Get(description="list of profiles"
+     * ),
+     *@OA\Response(response="200",description="Returns the list of profile",
+    *content={
+    *@OA\MediaType(mediaType="application/json",
+    *@OA\Schema(
+    *@OA\Property(property="NomProfil", type="string"),
+    *@OA\Property(property="ProfilDesc", type="string")
+    *)
+    *
+    *)
+    *}
+    * ),
+    *@OA\Tag(name="index")
+    */
+    
+    public function index(ProfilRepository $profilRepository)
     {
-        // return $this->render('profil/index.html.twig', [
-        //     'profils' => $profilRepository->findAll(),
-        // ]);
+       
+        $profile = $this->getDoctrine()
+        ->getRepository(Profil::class)
+        ->findAll();
 
-        $data = $profilRepository->findAll();
-        return $this->response($data);
+    $data = [];
+
+    foreach ($profile as $profil) {
+       $data[] = [
+           'id' => $profil->getId(),
+           'NomProfil' => $profil->getNomProfil(),
+           'ProfilDesc' => $profil->getProfilDesc(),
+           'ProfilSys' => $profil->getProfilSys(),
+           'DateCreat' => $profil->getDateCreat(),
+       
+         // 'UserCreat' => $profil->getDateCreat(),
+       ];
+    }
+
+
+    return $this->json($data);
     }
 
     /**
-     * @Route("/profil/new", name="profil_new", methods={"GET", "POST"})
+     * @Route("/new", name="profil_new", methods={"GET", "POST"})
      */
+    
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
        
         try{
             $request = $this->transformJsonBody($request);
-            if (!$request || !$request->get('NomProfil') ||!$request->request->get('ProfilDesc') ||!$request->request->get('ProfilSys')){
+            if (!$request || !$request->get('NomProfil') ||!$request->request->get('ProfilDesc')){
              throw new \Exception();
             } 
             $profil = new Profil();
             $profil->setNomProfil($request->get('NomProfil'));
             $profil->setProfilDesc($request->get('ProfilDesc'));
-            $profil->setProfilSys($request->get('ProfilSys'));
             $entityManager->persist($profil);
             $entityManager->flush();
             
@@ -57,7 +90,7 @@ class ProfilController extends AbstractController
            }catch (\Exception $e){
             $data = [
              'status' => 422,
-             'errors' => $e,
+             'errors' => "Data no valid",
             ];
             return $this->response($data, 422);
            }
@@ -67,7 +100,7 @@ class ProfilController extends AbstractController
 
 
     /**
-     * @Route("/profils/{id}", name="profil_show", methods={"GET"})
+     * @Route("/{id}", name="profil_show", methods={"GET"})
      */
     public function show(ProfilRepository $profilRepository, $id)
     {
@@ -85,7 +118,7 @@ class ProfilController extends AbstractController
     
 
     /**
-     * @Route("/profils/{id}/edit", name="profil_edit", methods={"GET", "POST"})
+     * @Route("/edit/{id}", name="profil_edit", methods={"PUT"})
      */
     public function edit(Request $request, EntityManagerInterface $entityManager, ProfilRepository $profilRepository, $id)
     {
@@ -129,7 +162,7 @@ class ProfilController extends AbstractController
     }
 
     /**
-     * @Route("/profils/{id}", name="profil_delete", methods={"POST"})
+     * @Route("/delete/{id}", name="profil_delete", methods={"DELETE"})
      */
     public function delete(EntityManagerInterface $entityManager, ProfilRepository $profilRepository, $id)
        { 

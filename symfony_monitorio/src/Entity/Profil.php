@@ -7,6 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Doctrine\ODM\MongoDB\Mapping\Annotations as ODM;
 
+use OpenApi\Annotations as OA;
 
 /**
  * @ORM\Entity(repositoryClass=ProfilRepository::class)
@@ -22,12 +23,12 @@ class Profil implements \JsonSerializable
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @OA\Property(type="string", maxLength=255)
      */
     private $NomProfil;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @OA\Property(type="string", maxLength=255)
      */
     private $ProfilDesc;
 

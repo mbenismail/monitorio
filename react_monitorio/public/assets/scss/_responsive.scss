@@ -266,11 +266,13 @@ Contents:
 @media (max-width: 1250px){
   .element-box, .invoice-w, .big-error-w {
     padding: 1rem 1.5rem;
+   
   }
   .element-box .os-tabs-controls, .invoice-w .os-tabs-controls, .big-error-w .os-tabs-controls {
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-  }
+    margin-left: -2.5rem;
+    margin-right: -0.5rem;
+
+ }
   body,
   body.auth-wrapper .all-wrapper {
     padding: 0px;

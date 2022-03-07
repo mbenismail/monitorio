@@ -700,8 +700,8 @@ pre code {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  margin-right: -10px;
-  margin-left: -10px;
+  margin-right: -100px;
+  margin-left: 48px;
 }
 
 .no-gutters {
@@ -2673,7 +2673,7 @@ pre code {
 @media (max-width: 575.98px) {
   .table-responsive-sm {
     display: block;
-    width: 100%;
+    width: 60%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
@@ -2701,7 +2701,7 @@ pre code {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-  .table-responsive-lg > .table-bordered {
+  .sponsive-lg > .table-bordered {
     border: 0;
   }
 }
@@ -2753,10 +2753,11 @@ pre code {
     border: 0;
   }
 }
-
+/*form */
 .table-responsive {
   display: block;
-  width: 100%;
+  width: 80%;
+  margin-left: 100px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -11639,7 +11640,10 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .controls-above-table {
-  margin-bottom: 1rem;
+  margin-left: 43px;
+    margin-bottom: 1.5rem;
+    margin-top: 32px;
+    width: 921px;
 }
 
 .controls-above-table .btn, .controls-above-table .all-wrapper .fc-button, .all-wrapper .controls-above-table .fc-button {
@@ -11660,6 +11664,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .controls-below-table {
   display: -webkit-box;
+  margin-left: 100px;
+  margin-right: 90px;
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
@@ -13274,6 +13280,7 @@ div.dataTables_scrollHead table.table-bordered {
 
 div.table-responsive > div.dataTables_wrapper > div.row {
   margin: 0;
+  margin-left: 100px;
 }
 
 div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:first-child {
@@ -13282,6 +13289,7 @@ div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:fir
 
 div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:last-child {
   padding-right: 0;
+
 }
 
 /* 5. Handy Animations  */
@@ -29163,7 +29171,8 @@ Contents:
 /* #6.  Screen size <= 1250px */
 @media (max-width: 1250px) {
   .element-box, .invoice-w, .big-error-w, .invoice-w, .big-error-w {
-    padding: 1rem 1.5rem;
+    padding: 0rem -0.5rem;
+   
   }
   .element-box .os-tabs-controls, .invoice-w .os-tabs-controls, .big-error-w .os-tabs-controls, .invoice-w .os-tabs-controls, .big-error-w .os-tabs-controls {
     margin-left: -1.5rem;

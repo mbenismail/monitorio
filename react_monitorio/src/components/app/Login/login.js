@@ -1,4 +1,9 @@
-function loginComponent() {
+import React from 'react';
+import { render } from "@testing-library/react";
+
+function Applogin() {
+  render()
+{
     return (
       
          <div className="all-wrapper menu-side with-pattern">
@@ -31,5 +36,5 @@ function loginComponent() {
           
     );
   }
-  
-  export default loginComponent;
+}
+  export default Applogin;

@@ -3,7 +3,9 @@ import Register from  "./components/app/Register/register";
 import EmailsForgot from  "./components/app/Emails_Forgot/emailsforgot";
 import SideBar from  "./components/app/Sidebar/sidebar";
 import Header from  "./components/app/Header/header";
-import Profile from './components/app/Profile/profile';
+import CreateProfile from './components/app/Profile/CreateProfile';
+import ListProfiles from './components/app/Profile/ListProfile';
+import EditProfile from './components/app/Profile/EditProfile';
 import Footer from "./components/app/Footer/footer";
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
@@ -33,7 +35,10 @@ function App() {
     <BrowserRouter>
       <Switch>
 
-          <Route path="/profile" component={Profile}/>
+          <Route path="/Create profile" component={CreateProfile}/>
+          <Route path="/List profiles" component={ListProfiles}/>
+          <Route path="/Edit profile" component={EditProfile}/>
+
           <Route path="/user" component={User}/>
           <Route path="/project" component={Project} />
 
