@@ -200,6 +200,8 @@ return [[
 '[C]App%5CEntity%5CUser%23getUserModif' => 1,
 'App%5CEntity%5CUser%23setUserModif' => 0,
 '[C]App%5CEntity%5CUser%23setUserModif' => 1,
+'App%5CEntity%5CUser%23rand_pwd' => 0,
+'[C]App%5CEntity%5CUser%23rand_pwd' => 1,
 'App%5CEntity%5CUser%23jsonSerialize' => 0,
 '[C]App%5CEntity%5CUser%23jsonSerialize' => 1,
 'App%5CEntity%5CUser%24id' => 15,
@@ -1260,7 +1262,7 @@ return [[
 ], [
 
 0 => [],
-1 => 1646582618,
+1 => 1647811011,
 2 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
@@ -1457,7 +1459,10 @@ return [[
 4 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
-            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+            clone ($p['OpenApi\\Annotations\\Tag'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Tag')),
+            clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+            clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
         ],
         null,
         [
@@ -1475,9 +1480,41 @@ return [[
                     ],
                 ],
             ],
+            'stdClass' => [
+                '_context' => [
+                    1 => $o[2],
+                ],
+                'name' => [
+                    1 => 'profil_new',
+                ],
+                'logger' => [
+                    2 => $o[3],
+                ],
+                'filename' => [
+                    2 => '/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                ],
+                'line' => [
+                    2 => 977,
+                ],
+                'method' => [
+                    2 => 'Annotation',
+                ],
+                'class' => [
+                    2 => 'DocParser',
+                ],
+                'namespace' => [
+                    2 => 'Doctrine\\Common\\Annotations',
+                ],
+                'annotations' => [
+                    2 => [
+                        $o[1],
+                    ],
+                ],
+            ],
         ],
         [
             $o[0],
+            $o[1],
         ],
         []
     );
@@ -1572,7 +1609,7 @@ return [[
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/api',
+                    '/api/Users',
                 ],
             ],
         ],
@@ -1591,7 +1628,7 @@ return [[
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/Users',
+                    '/index',
                 ],
                 'name' => [
                     'user_index',
@@ -1618,15 +1655,14 @@ return [[
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/Users/new',
+                    '/new',
                 ],
                 'name' => [
                     'User_new',
                 ],
                 'methods' => [
                     [
-                        'GET',
-                        'POST',
+                        'PUT',
                     ],
                 ],
             ],
@@ -1646,7 +1682,7 @@ return [[
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/Users/{id}',
+                    '/show/{id}',
                 ],
                 'name' => [
                     'User_show',
@@ -1673,7 +1709,7 @@ return [[
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/Users/{id}/edit',
+                    '/{id}/edit',
                 ],
                 'name' => [
                     'user_edit',
@@ -1701,14 +1737,14 @@ return [[
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/Users/{id}',
+                    '/delete/{id}',
                 ],
                 'name' => [
                     'users_delete',
                 ],
                 'methods' => [
                     [
-                        'POST',
+                        'DELETE',
                     ],
                 ],
             ],

@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '8896e517df631b10b5caf3b50b3c285c487484b7',
+        'reference' => '2c74d82a648268e268c905453d0c2021f3c11ea8',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '8896e517df631b10b5caf3b50b3c285c487484b7',
+            'reference' => '2c74d82a648268e268c905453d0c2021f3c11ea8',
             'dev_requirement' => false,
         ),
         'behat/transliterator' => array(
@@ -215,6 +215,15 @@
             'install_path' => __DIR__ . '/../gedmo/doctrine-extensions',
             'aliases' => array(),
             'reference' => 'dd1a1438a10e92910e5c510f631a568c19e6c00e',
+            'dev_requirement' => false,
+        ),
+        'hackzilla/password-generator' => array(
+            'pretty_version' => '1.6.0',
+            'version' => '1.6.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../hackzilla/password-generator',
+            'aliases' => array(),
+            'reference' => '53c13507b5b9875a07618f1f2a7db95e5b8c0638',
             'dev_requirement' => false,
         ),
         'laminas/laminas-code' => array(

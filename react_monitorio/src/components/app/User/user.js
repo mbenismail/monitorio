@@ -6,20 +6,10 @@ function AppUser() {
 
 
 <div className="header-s">  
-
   <div className="all-wrapper with-side-panel solid-bg-all">
-    
-   
-       
-     
-      
-     
-      
           <div className="content-box"><div className="row">
               <div className="col-sm-5">
-                
-               
-              </div>
+               </div>
               <div className="col-sm-10">
                 <div className="element-wrapper">
                   <div className="element-box">
@@ -65,7 +55,7 @@ function AppUser() {
                               <div className="input-group">
                                 <div className="input-group-prepend">
                                   <div className="input-group-text">
-                                    @
+                                    
                                   </div>
                                 </div>
                                 <input className="form-control" placeholder="Twitter Username" type="text" />

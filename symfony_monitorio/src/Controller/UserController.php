@@ -13,14 +13,14 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
- * @Route("/api")
+ * @Route("/api/Users")
  */
 class UserController extends AbstractController
 {
     
 
     /**
-     * @Route("/Users", name="user_index", methods={"GET"})
+     * @Route("/index", name="user_index", methods={"GET"})
      */
     public function index(UserRepository $userRepository): Response
     {
@@ -30,9 +30,9 @@ class UserController extends AbstractController
     }
 
     /**
-     * @Route("/Users/new", name="User_new", methods={"GET", "POST"})
+     * @Route("/new", name="User_new", methods={"PUT"})
      */
-    public function new(Request $request, EntityManagerInterface $entityManager): Response
+    public function new(Request $request, EntityManagerInterface $entityManager,ProfilRepository $profilRepository): Response
     {
        
         try{
@@ -40,10 +40,14 @@ class UserController extends AbstractController
             if (!$request || !$request->get('Login') ||!$request->request->get('Nom') ||!$request->request->get('Prenom')){
              throw new \Exception();
             } 
+
             $user = new User();
             $user->setLogin($request->get('Login'));
             $user->setNom($request->get('Nom'));
             $user->setPrenom($request->get('Prenom'));
+            // $password = $user->rand_pwd(8);
+            // $en_pwd= sha1($password);
+            // $user->setPwd($request->get($en_pwd));
             $entityManager->persist($user);
             $entityManager->flush();
             $data = [
@@ -65,7 +69,7 @@ class UserController extends AbstractController
 
 
     /**
-     * @Route("/Users/{id}", name="User_show", methods={"GET"})
+     * @Route("/show/{id}", name="User_show", methods={"GET"})
      */
     public function show(UserRepository $UserRepository, $id)
     {
@@ -83,7 +87,7 @@ class UserController extends AbstractController
     
 
     /**
-     * @Route("/Users/{id}/edit", name="user_edit", methods={"GET", "POST"})
+     * @Route("/{id}/edit", name="user_edit", methods={"GET", "POST"})
      */
     public function edit(Request $request, EntityManagerInterface $entityManager, UserRepository $UserRepository, $id)
     {
@@ -109,7 +113,7 @@ class UserController extends AbstractController
             $user->setPrenom($request->get('Prenom'));
 
             $entityManager->flush();
-        
+
             $data = [
              'status' => 200,
              'errors' => "User updated successfully",
@@ -127,7 +131,7 @@ class UserController extends AbstractController
     }
 
     /**
-     * @Route("/Users/{id}", name="users_delete", methods={"POST"})
+     * @Route("/delete/{id}", name="users_delete", methods={"DELETE"})
      */
     public function delete(EntityManagerInterface $entityManager, UserRepository $UserRepository, $id)
        { 

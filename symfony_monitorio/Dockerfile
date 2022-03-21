@@ -1,18 +1,15 @@
-FROM php:8.1.3-fpm
+FROM php:8.1.3-fpm-alpine
 
-RUN apt update \
-    && apt install -y zlib1g-dev g++ git libicu-dev zip libzip-dev zip \
-    && docker-php-ext-install intl opcache pdo pdo_mysql \
-    && pecl install apcu \
-    && docker-php-ext-enable apcu \
-    && docker-php-ext-configure zip \
-    && docker-php-ext-install zip
+# Apk install
+RUN apk --no-cache update && apk --no-cache add bash git
 
-WORKDIR /var/www/symfony_docker
+# Install pdo
+RUN docker-php-ext-install pdo_mysql
 
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+# Install composer
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && php composer-setup.php && php -r "unlink('composer-setup.php');" && mv composer.phar /usr/local/bin/composer
 
-RUN curl -sS https://get.symfony.com/cli/installer | bash
-RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
-RUN git config --global user.email "bidahsamia@gmail.com" \ 
-    && git config --global user.name "Samia"
+# Symfony CLI
+RUN wget https://get.symfony.com/cli/installer -O - | bash && mv /root/.symfony/bin/symfony /usr/local/bin/symfony
+
+WORKDIR /var/www/html

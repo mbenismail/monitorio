@@ -181,7 +181,8 @@ class Profil implements \JsonSerializable
    {
     return [
      "NomProfil" => $this->getNomProfil(),
-     "ProfilDesc" => $this->getProfilDesc()
+     "ProfilDesc" => $this->getProfilDesc(),
+     "ProfilSys" => $this->getProfilSys(),
     ];
    }
 }

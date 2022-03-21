@@ -1,5 +1,6 @@
 import { render } from "@testing-library/react";
 import React ,{useState,useEffect} from 'react';
+import { useHistory } from "react-router-dom";
 
 function AppProfil() {
   const url ="http://localhost:8000/api/profile/new"
@@ -10,10 +11,10 @@ function AppProfil() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // console.log(JSON.stringify({
-      //   NomProfil: NomProfil,
-      //   ProfilDesc: ProfilDesc,
-      // }))
+      console.log(JSON.stringify({
+        NomProfil: NomProfil,
+        ProfilDesc: ProfilDesc,
+      }))
   let res =  await fetch(url, {
   method: "POST",
   headers: {'Content-Type': 'application/json' },
@@ -37,6 +38,8 @@ if (resJson.status === 200) {
 console.log(err);
 }
 };
+let history = useHistory();
+
 render()
 {
   return (
@@ -107,7 +110,8 @@ render()
                      
                       <div className="form-buttons-w">
                         <button 
-                        className="btn btn-primary" type="submit"> Submit</button>
+                        className="btn btn-primary" type="submit"  onClick={()=>{
+                          history.push("/List profiles")}}> Submit</button>
                       </div>
                     </form>
                   </div>

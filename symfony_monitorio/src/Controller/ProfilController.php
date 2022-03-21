@@ -14,6 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use OpenApi\Annotations as OA;
 use Nelmio\ApiDocBundle\Annotation\Model;
 use Nelmio\ApiDocBundle\Annotation\Security;
+use Psr\Log\LoggerInterface;
 /**
  * @Route("api/profile", name= "profils")
  */
@@ -63,11 +64,12 @@ class ProfilController extends AbstractController
     return $this->json($data);
     }
 
-    /**
+     /**
      * @Route("/new", name="profil_new", methods={"GET", "POST"})
+     * *@OA\Tag(name="profil_new")
      */
     
-    public function new(Request $request, EntityManagerInterface $entityManager): Response
+    public function new(Request $request, EntityManagerInterface $entityManager ): Response
     {
        
         try{
@@ -80,7 +82,7 @@ class ProfilController extends AbstractController
             $profil->setProfilDesc($request->get('ProfilDesc'));
             $entityManager->persist($profil);
             $entityManager->flush();
-            
+
             $data = [
              'status' => 200,
              'success' => "Profile added successfully",

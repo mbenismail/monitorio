@@ -1,0 +1,171 @@
+<?php //App%255CController%255CProfilController%2523index
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        clone ($p['OpenApi\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Get')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Loggers\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Loggers\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\MediaType'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\MediaType')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Tag'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Tag')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Loggers\\DefaultLogger'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                '/index',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
+            ],
+        ],
+        'stdClass' => [
+            '_context' => [
+                1 => $o[2],
+                4 => $o[5],
+                7 => $o[8],
+                10 => $o[11],
+                13 => $o[14],
+                16 => $o[17],
+                19 => $o[20],
+            ],
+            'description' => [
+                1 => 'list of profiles',
+                4 => 'Returns the list of profile',
+            ],
+            'logger' => [
+                2 => $o[3],
+                5 => $o[6],
+                8 => $o[9],
+                11 => $o[12],
+                14 => $o[15],
+                17 => $o[18],
+                20 => $o[21],
+            ],
+            'filename' => [
+                2 => '/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                5 => '/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                8 => '/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                11 => '/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                14 => '/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                17 => '/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+                20 => '/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/DocParser.php',
+            ],
+            'line' => [
+                2 => 977,
+                5 => 977,
+                8 => 977,
+                11 => 977,
+                14 => 977,
+                17 => 977,
+                20 => 977,
+            ],
+            'method' => [
+                2 => 'Annotation',
+                5 => 'Annotation',
+                8 => 'Annotation',
+                11 => 'Annotation',
+                14 => 'Annotation',
+                17 => 'Annotation',
+                20 => 'Annotation',
+            ],
+            'class' => [
+                2 => 'DocParser',
+                5 => 'DocParser',
+                8 => 'DocParser',
+                11 => 'DocParser',
+                14 => 'DocParser',
+                17 => 'DocParser',
+                20 => 'DocParser',
+            ],
+            'namespace' => [
+                2 => 'Doctrine\\Common\\Annotations',
+                5 => 'Doctrine\\Common\\Annotations',
+                8 => 'Doctrine\\Common\\Annotations',
+                11 => 'Doctrine\\Common\\Annotations',
+                14 => 'Doctrine\\Common\\Annotations',
+                17 => 'Doctrine\\Common\\Annotations',
+                20 => 'Doctrine\\Common\\Annotations',
+            ],
+            'annotations' => [
+                2 => [
+                    $o[1],
+                ],
+                5 => [
+                    $o[4],
+                ],
+                8 => [
+                    $o[7],
+                ],
+                11 => [
+                    $o[10],
+                ],
+                14 => [
+                    $o[13],
+                ],
+                17 => [
+                    $o[16],
+                ],
+                20 => [
+                    $o[19],
+                ],
+            ],
+            'response' => [
+                4 => '200',
+            ],
+            'content' => [
+                4 => [
+                    $o[7],
+                ],
+            ],
+            'mediaType' => [
+                7 => 'application/json',
+            ],
+            'schema' => [
+                7 => $o[10],
+            ],
+            'properties' => [
+                10 => [
+                    $o[13],
+                    $o[16],
+                ],
+            ],
+            'type' => [
+                13 => 'string',
+                16 => 'string',
+            ],
+            'property' => [
+                13 => 'NomProfil',
+                16 => 'ProfilDesc',
+            ],
+            'name' => [
+                19 => 'index',
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[4],
+        $o[19],
+    ],
+    []
+); }];

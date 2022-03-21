@@ -16846,7 +16846,7 @@ body.menu-side-right .layout-w {
  #1. Element Wrapper Styles
 */
 .element-wrapper {
-  padding-bottom: 3rem;
+  padding-bottom: 20rem;
 }
 
 .element-wrapper .btn + .btn, .element-wrapper .all-wrapper .fc-button + .btn, .all-wrapper .element-wrapper .fc-button + .btn, .element-wrapper .all-wrapper .btn + .fc-button, .all-wrapper .element-wrapper .btn + .fc-button, .element-wrapper .all-wrapper .fc-button + .fc-button, .all-wrapper .element-wrapper .fc-button + .fc-button {
@@ -25325,11 +25325,11 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
 .footer-w {
  
   color: #868686;
-  margin-top:2px;
+  margin-top:10px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
   background-image: linear-gradient(to bottom, #fff, #fff);
   font-weight: 300;
-  padding-bottom: 9px;
+  padding-bottom: 20px;
   position: relative;
   z-index: 2;
 
@@ -28496,6 +28496,8 @@ body.color-scheme-dark .element-wrapper .element-header, .content-panel.color-sc
   border-bottom-color: rgba(255, 255, 255, 0.05);
 }
 
+
+
 body.color-scheme-dark .users-list-w .user-w .user-role, .content-panel.color-scheme-dark .users-list-w .user-w .user-role {
   color: rgba(218, 226, 243, 0.4);
 }
@@ -29354,7 +29356,7 @@ Contents:
     display: none;
   }
   .element-wrapper {
-    padding-bottom: 2rem;
+    padding-bottom: 21rem;
   }
   .element-balances {
     -webkit-box-pack: justify;
@@ -30058,7 +30060,7 @@ Contents:
     padding: 1rem;
   }
   .element-wrapper {
-    padding-bottom: 1.5rem;
+    padding-bottom: 21rem;
   }
   .element-wrapper.compact {
     padding-bottom: 1rem;

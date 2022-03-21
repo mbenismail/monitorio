@@ -243,6 +243,11 @@ class User implements \JsonSerializable
 
         return $this;
     }
+    function rand_pwd( $length ) {
+        $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@[]^_!#$%&'()*+,-./:;{}<>=|~?";
+       return  substr(str_shuffle($chars),0,$length);
+    }
+
 /**
     * Specify data which should be serialized to JSON
     * @link https://php.net/manual/en/jsonserializable.jsonserialize.php
