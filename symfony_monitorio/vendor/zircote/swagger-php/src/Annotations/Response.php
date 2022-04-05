@@ -9,17 +9,17 @@ namespace OpenApi\Annotations;
 use OpenApi\Generator;
 
 /**
- * A "Response Object": https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#response-object.
+ * Describes a single response from an API Operation, including design-time,
+ * static links to operations based on the response.
  *
- * Describes a single response from an API Operation, including design-time, static links to operations based on the
- * response.
+ * @see [OAI Response Object](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#response-object)
  *
  * @Annotation
  */
 class Response extends AbstractAnnotation
 {
     /**
-     * $ref See https://swagger.io/docs/specification/using-ref/.
+     * @see [Using refs](https://swagger.io/docs/specification/using-ref/)
      *
      * @var string
      */
@@ -28,12 +28,15 @@ class Response extends AbstractAnnotation
     /**
      * The key into Operations->responses array.
      *
-     * @var string|int a HTTP Status Code or "default"
+     * A HTTP status code or <code>default</code>.
+     *
+     * @var string|int
      */
     public $response = Generator::UNDEFINED;
 
     /**
      * A short description of the response.
+     *
      * CommonMark syntax may be used for rich text representation.
      *
      * @var string
@@ -42,6 +45,7 @@ class Response extends AbstractAnnotation
 
     /**
      * Maps a header name to its definition.
+     *
      * RFC7230 states header names are case insensitive. https://tools.ietf.org/html/rfc7230#page-22
      * If a response header is defined with the name "Content-Type", it shall be ignored.
      *
@@ -51,6 +55,7 @@ class Response extends AbstractAnnotation
 
     /**
      * A map containing descriptions of potential response payloads.
+     *
      * The key is a media type or media type range and the value describes it.
      * For responses that match multiple keys, only the most specific key is applicable. e.g. text/plain overrides
      * text/*.
@@ -61,6 +66,7 @@ class Response extends AbstractAnnotation
 
     /**
      * A map of operations links that can be followed from the response.
+     *
      * The key of the map is a short name for the link, following the naming constraints of the names for Component
      * Objects.
      *
@@ -104,9 +110,9 @@ class Response extends AbstractAnnotation
     /**
      * @inheritdoc
      */
-    public function validate(array $parents = [], array $skip = [], string $ref = ''): bool
+    public function validate(array $stack = [], array $skip = [], string $ref = '', $context = null): bool
     {
-        $valid = parent::validate($parents, $skip);
+        $valid = parent::validate($stack, $skip, $ref, $context);
 
         if (Generator::isDefault($this->description) && Generator::isDefault($this->ref)) {
             $this->_context->logger->warning($this->identity() . ' One of description or ref is required');

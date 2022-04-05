@@ -8,7 +8,7 @@ use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 
 
 /**
- * This class is automatically generated to help creating config.
+ * This class is automatically generated to help in creating a config.
  */
 class SetCookiesConfig 
 {
@@ -19,6 +19,7 @@ class SetCookiesConfig
     private $secure;
     private $httpOnly;
     private $split;
+    private $_usedProperties = [];
     
     /**
      * The cookie lifetime. If null, the "token_ttl" option value will be used
@@ -28,6 +29,7 @@ class SetCookiesConfig
      */
     public function lifetime($value): self
     {
+        $this->_usedProperties['lifetime'] = true;
         $this->lifetime = $value;
     
         return $this;
@@ -40,6 +42,7 @@ class SetCookiesConfig
      */
     public function samesite($value): self
     {
+        $this->_usedProperties['samesite'] = true;
         $this->samesite = $value;
     
         return $this;
@@ -52,6 +55,7 @@ class SetCookiesConfig
      */
     public function path($value): self
     {
+        $this->_usedProperties['path'] = true;
         $this->path = $value;
     
         return $this;
@@ -64,6 +68,7 @@ class SetCookiesConfig
      */
     public function domain($value): self
     {
+        $this->_usedProperties['domain'] = true;
         $this->domain = $value;
     
         return $this;
@@ -76,6 +81,7 @@ class SetCookiesConfig
      */
     public function secure($value): self
     {
+        $this->_usedProperties['secure'] = true;
         $this->secure = $value;
     
         return $this;
@@ -88,6 +94,7 @@ class SetCookiesConfig
      */
     public function httpOnly($value): self
     {
+        $this->_usedProperties['httpOnly'] = true;
         $this->httpOnly = $value;
     
         return $this;
@@ -99,6 +106,7 @@ class SetCookiesConfig
      */
     public function split($value): self
     {
+        $this->_usedProperties['split'] = true;
         $this->split = $value;
     
         return $this;
@@ -107,37 +115,44 @@ class SetCookiesConfig
     public function __construct(array $value = [])
     {
     
-        if (isset($value['lifetime'])) {
+        if (array_key_exists('lifetime', $value)) {
+            $this->_usedProperties['lifetime'] = true;
             $this->lifetime = $value['lifetime'];
             unset($value['lifetime']);
         }
     
-        if (isset($value['samesite'])) {
+        if (array_key_exists('samesite', $value)) {
+            $this->_usedProperties['samesite'] = true;
             $this->samesite = $value['samesite'];
             unset($value['samesite']);
         }
     
-        if (isset($value['path'])) {
+        if (array_key_exists('path', $value)) {
+            $this->_usedProperties['path'] = true;
             $this->path = $value['path'];
             unset($value['path']);
         }
     
-        if (isset($value['domain'])) {
+        if (array_key_exists('domain', $value)) {
+            $this->_usedProperties['domain'] = true;
             $this->domain = $value['domain'];
             unset($value['domain']);
         }
     
-        if (isset($value['secure'])) {
+        if (array_key_exists('secure', $value)) {
+            $this->_usedProperties['secure'] = true;
             $this->secure = $value['secure'];
             unset($value['secure']);
         }
     
-        if (isset($value['httpOnly'])) {
+        if (array_key_exists('httpOnly', $value)) {
+            $this->_usedProperties['httpOnly'] = true;
             $this->httpOnly = $value['httpOnly'];
             unset($value['httpOnly']);
         }
     
-        if (isset($value['split'])) {
+        if (array_key_exists('split', $value)) {
+            $this->_usedProperties['split'] = true;
             $this->split = $value['split'];
             unset($value['split']);
         }
@@ -150,25 +165,25 @@ class SetCookiesConfig
     public function toArray(): array
     {
         $output = [];
-        if (null !== $this->lifetime) {
+        if (isset($this->_usedProperties['lifetime'])) {
             $output['lifetime'] = $this->lifetime;
         }
-        if (null !== $this->samesite) {
+        if (isset($this->_usedProperties['samesite'])) {
             $output['samesite'] = $this->samesite;
         }
-        if (null !== $this->path) {
+        if (isset($this->_usedProperties['path'])) {
             $output['path'] = $this->path;
         }
-        if (null !== $this->domain) {
+        if (isset($this->_usedProperties['domain'])) {
             $output['domain'] = $this->domain;
         }
-        if (null !== $this->secure) {
+        if (isset($this->_usedProperties['secure'])) {
             $output['secure'] = $this->secure;
         }
-        if (null !== $this->httpOnly) {
+        if (isset($this->_usedProperties['httpOnly'])) {
             $output['httpOnly'] = $this->httpOnly;
         }
-        if (null !== $this->split) {
+        if (isset($this->_usedProperties['split'])) {
             $output['split'] = $this->split;
         }
     

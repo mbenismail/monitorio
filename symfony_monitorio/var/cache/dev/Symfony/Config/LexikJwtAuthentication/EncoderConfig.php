@@ -8,13 +8,14 @@ use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 
 
 /**
- * This class is automatically generated to help creating config.
+ * This class is automatically generated to help in creating a config.
  */
 class EncoderConfig 
 {
     private $service;
     private $signatureAlgorithm;
     private $cryptoEngine;
+    private $_usedProperties = [];
     
     /**
      * @default 'lexik_jwt_authentication.encoder.lcobucci'
@@ -23,6 +24,7 @@ class EncoderConfig
      */
     public function service($value): self
     {
+        $this->_usedProperties['service'] = true;
         $this->service = $value;
     
         return $this;
@@ -35,6 +37,7 @@ class EncoderConfig
      */
     public function signatureAlgorithm($value): self
     {
+        $this->_usedProperties['signatureAlgorithm'] = true;
         $this->signatureAlgorithm = $value;
     
         return $this;
@@ -48,6 +51,7 @@ class EncoderConfig
      */
     public function cryptoEngine($value): self
     {
+        $this->_usedProperties['cryptoEngine'] = true;
         $this->cryptoEngine = $value;
     
         return $this;
@@ -56,17 +60,20 @@ class EncoderConfig
     public function __construct(array $value = [])
     {
     
-        if (isset($value['service'])) {
+        if (array_key_exists('service', $value)) {
+            $this->_usedProperties['service'] = true;
             $this->service = $value['service'];
             unset($value['service']);
         }
     
-        if (isset($value['signature_algorithm'])) {
+        if (array_key_exists('signature_algorithm', $value)) {
+            $this->_usedProperties['signatureAlgorithm'] = true;
             $this->signatureAlgorithm = $value['signature_algorithm'];
             unset($value['signature_algorithm']);
         }
     
-        if (isset($value['crypto_engine'])) {
+        if (array_key_exists('crypto_engine', $value)) {
+            $this->_usedProperties['cryptoEngine'] = true;
             $this->cryptoEngine = $value['crypto_engine'];
             unset($value['crypto_engine']);
         }
@@ -79,13 +86,13 @@ class EncoderConfig
     public function toArray(): array
     {
         $output = [];
-        if (null !== $this->service) {
+        if (isset($this->_usedProperties['service'])) {
             $output['service'] = $this->service;
         }
-        if (null !== $this->signatureAlgorithm) {
+        if (isset($this->_usedProperties['signatureAlgorithm'])) {
             $output['signature_algorithm'] = $this->signatureAlgorithm;
         }
-        if (null !== $this->cryptoEngine) {
+        if (isset($this->_usedProperties['cryptoEngine'])) {
             $output['crypto_engine'] = $this->cryptoEngine;
         }
     

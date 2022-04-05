@@ -10,7 +10,7 @@ use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 
 
 /**
- * This class is automatically generated to help creating config.
+ * This class is automatically generated to help in creating a config.
  */
 class NelmioApiDocConfig implements \Symfony\Component\Config\Builder\ConfigBuilderInterface
 {
@@ -18,6 +18,7 @@ class NelmioApiDocConfig implements \Symfony\Component\Config\Builder\ConfigBuil
     private $mediaTypes;
     private $areas;
     private $models;
+    private $_usedProperties = [];
     
     /**
      * @param ParamConfigurator|mixed $value
@@ -25,6 +26,7 @@ class NelmioApiDocConfig implements \Symfony\Component\Config\Builder\ConfigBuil
      */
     public function documentation(string $key, $value): self
     {
+        $this->_usedProperties['documentation'] = true;
         $this->documentation[$key] = $value;
     
         return $this;
@@ -36,6 +38,7 @@ class NelmioApiDocConfig implements \Symfony\Component\Config\Builder\ConfigBuil
      */
     public function mediaTypes($value): self
     {
+        $this->_usedProperties['mediaTypes'] = true;
         $this->mediaTypes = $value;
     
         return $this;
@@ -44,6 +47,8 @@ class NelmioApiDocConfig implements \Symfony\Component\Config\Builder\ConfigBuil
     public function areas(string $name, array $value = []): \Symfony\Config\NelmioApiDoc\AreasConfig
     {
         if (!isset($this->areas[$name])) {
+            $this->_usedProperties['areas'] = true;
+    
             return $this->areas[$name] = new \Symfony\Config\NelmioApiDoc\AreasConfig($value);
         }
         if ([] === $value) {
@@ -56,6 +61,7 @@ class NelmioApiDocConfig implements \Symfony\Component\Config\Builder\ConfigBuil
     public function models(array $value = []): \Symfony\Config\NelmioApiDoc\ModelsConfig
     {
         if (null === $this->models) {
+            $this->_usedProperties['models'] = true;
             $this->models = new \Symfony\Config\NelmioApiDoc\ModelsConfig($value);
         } elseif ([] !== $value) {
             throw new InvalidConfigurationException('The node created by "models()" has already been initialized. You cannot pass values the second time you call models().');
@@ -72,22 +78,26 @@ class NelmioApiDocConfig implements \Symfony\Component\Config\Builder\ConfigBuil
     public function __construct(array $value = [])
     {
     
-        if (isset($value['documentation'])) {
+        if (array_key_exists('documentation', $value)) {
+            $this->_usedProperties['documentation'] = true;
             $this->documentation = $value['documentation'];
             unset($value['documentation']);
         }
     
-        if (isset($value['media_types'])) {
+        if (array_key_exists('media_types', $value)) {
+            $this->_usedProperties['mediaTypes'] = true;
             $this->mediaTypes = $value['media_types'];
             unset($value['media_types']);
         }
     
-        if (isset($value['areas'])) {
+        if (array_key_exists('areas', $value)) {
+            $this->_usedProperties['areas'] = true;
             $this->areas = array_map(function ($v) { return new \Symfony\Config\NelmioApiDoc\AreasConfig($v); }, $value['areas']);
             unset($value['areas']);
         }
     
-        if (isset($value['models'])) {
+        if (array_key_exists('models', $value)) {
+            $this->_usedProperties['models'] = true;
             $this->models = new \Symfony\Config\NelmioApiDoc\ModelsConfig($value['models']);
             unset($value['models']);
         }
@@ -100,16 +110,16 @@ class NelmioApiDocConfig implements \Symfony\Component\Config\Builder\ConfigBuil
     public function toArray(): array
     {
         $output = [];
-        if (null !== $this->documentation) {
+        if (isset($this->_usedProperties['documentation'])) {
             $output['documentation'] = $this->documentation;
         }
-        if (null !== $this->mediaTypes) {
+        if (isset($this->_usedProperties['mediaTypes'])) {
             $output['media_types'] = $this->mediaTypes;
         }
-        if (null !== $this->areas) {
+        if (isset($this->_usedProperties['areas'])) {
             $output['areas'] = array_map(function ($v) { return $v->toArray(); }, $this->areas);
         }
-        if (null !== $this->models) {
+        if (isset($this->_usedProperties['models'])) {
             $output['models'] = $this->models->toArray();
         }
     

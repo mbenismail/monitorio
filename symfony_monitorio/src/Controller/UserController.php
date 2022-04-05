@@ -166,4 +166,24 @@ protected function transformJsonBody(\Symfony\Component\HttpFoundation\Request $
 
  return $request;
 }
+
+
+/**
+ * @Route("/randPwd", name="rand_pwwd", methods={"GET", "POST"})
+
+ */
+public function randomPassword() {
+    $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789!@#$%^&*";
+    $pass = array(); //remember to declare $pass as an array
+    $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+    for ($i = 0; $i < 10; $i++) {
+        $n = rand(0, $alphaLength);
+        $pass[] = $alphabet[$n];
+    }
+    //return new Response(
+      //  'error', 
+       //  Response::HTTP_OK
+   // );
+     return $this->response(implode($pass));  //turn the array into a string
+}
 }

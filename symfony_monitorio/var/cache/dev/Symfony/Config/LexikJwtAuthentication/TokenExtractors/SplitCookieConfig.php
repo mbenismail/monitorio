@@ -8,12 +8,13 @@ use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 
 
 /**
- * This class is automatically generated to help creating config.
+ * This class is automatically generated to help in creating a config.
  */
 class SplitCookieConfig 
 {
     private $enabled;
     private $cookies;
+    private $_usedProperties = [];
     
     /**
      * @default false
@@ -22,6 +23,7 @@ class SplitCookieConfig
      */
     public function enabled($value): self
     {
+        $this->_usedProperties['enabled'] = true;
         $this->enabled = $value;
     
         return $this;
@@ -33,6 +35,7 @@ class SplitCookieConfig
      */
     public function cookies($value): self
     {
+        $this->_usedProperties['cookies'] = true;
         $this->cookies = $value;
     
         return $this;
@@ -41,12 +44,14 @@ class SplitCookieConfig
     public function __construct(array $value = [])
     {
     
-        if (isset($value['enabled'])) {
+        if (array_key_exists('enabled', $value)) {
+            $this->_usedProperties['enabled'] = true;
             $this->enabled = $value['enabled'];
             unset($value['enabled']);
         }
     
-        if (isset($value['cookies'])) {
+        if (array_key_exists('cookies', $value)) {
+            $this->_usedProperties['cookies'] = true;
             $this->cookies = $value['cookies'];
             unset($value['cookies']);
         }
@@ -59,10 +64,10 @@ class SplitCookieConfig
     public function toArray(): array
     {
         $output = [];
-        if (null !== $this->enabled) {
+        if (isset($this->_usedProperties['enabled'])) {
             $output['enabled'] = $this->enabled;
         }
-        if (null !== $this->cookies) {
+        if (isset($this->_usedProperties['cookies'])) {
             $output['cookies'] = $this->cookies;
         }
     

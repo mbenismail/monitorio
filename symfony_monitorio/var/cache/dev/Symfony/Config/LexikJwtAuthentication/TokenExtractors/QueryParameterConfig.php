@@ -8,12 +8,13 @@ use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 
 
 /**
- * This class is automatically generated to help creating config.
+ * This class is automatically generated to help in creating a config.
  */
 class QueryParameterConfig 
 {
     private $enabled;
     private $name;
+    private $_usedProperties = [];
     
     /**
      * @default false
@@ -22,6 +23,7 @@ class QueryParameterConfig
      */
     public function enabled($value): self
     {
+        $this->_usedProperties['enabled'] = true;
         $this->enabled = $value;
     
         return $this;
@@ -34,6 +36,7 @@ class QueryParameterConfig
      */
     public function name($value): self
     {
+        $this->_usedProperties['name'] = true;
         $this->name = $value;
     
         return $this;
@@ -42,12 +45,14 @@ class QueryParameterConfig
     public function __construct(array $value = [])
     {
     
-        if (isset($value['enabled'])) {
+        if (array_key_exists('enabled', $value)) {
+            $this->_usedProperties['enabled'] = true;
             $this->enabled = $value['enabled'];
             unset($value['enabled']);
         }
     
-        if (isset($value['name'])) {
+        if (array_key_exists('name', $value)) {
+            $this->_usedProperties['name'] = true;
             $this->name = $value['name'];
             unset($value['name']);
         }
@@ -60,10 +65,10 @@ class QueryParameterConfig
     public function toArray(): array
     {
         $output = [];
-        if (null !== $this->enabled) {
+        if (isset($this->_usedProperties['enabled'])) {
             $output['enabled'] = $this->enabled;
         }
-        if (null !== $this->name) {
+        if (isset($this->_usedProperties['name'])) {
             $output['name'] = $this->name;
         }
     

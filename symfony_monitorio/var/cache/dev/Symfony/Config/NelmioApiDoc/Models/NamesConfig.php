@@ -8,7 +8,7 @@ use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 
 
 /**
- * This class is automatically generated to help creating config.
+ * This class is automatically generated to help in creating a config.
  */
 class NamesConfig 
 {
@@ -16,6 +16,7 @@ class NamesConfig
     private $type;
     private $groups;
     private $areas;
+    private $_usedProperties = [];
     
     /**
      * @default null
@@ -24,6 +25,7 @@ class NamesConfig
      */
     public function alias($value): self
     {
+        $this->_usedProperties['alias'] = true;
         $this->alias = $value;
     
         return $this;
@@ -36,6 +38,7 @@ class NamesConfig
      */
     public function type($value): self
     {
+        $this->_usedProperties['type'] = true;
         $this->type = $value;
     
         return $this;
@@ -48,6 +51,7 @@ class NamesConfig
      */
     public function groups($value = NULL): self
     {
+        $this->_usedProperties['groups'] = true;
         $this->groups = $value;
     
         return $this;
@@ -59,6 +63,7 @@ class NamesConfig
      */
     public function areas($value): self
     {
+        $this->_usedProperties['areas'] = true;
         $this->areas = $value;
     
         return $this;
@@ -67,22 +72,26 @@ class NamesConfig
     public function __construct(array $value = [])
     {
     
-        if (isset($value['alias'])) {
+        if (array_key_exists('alias', $value)) {
+            $this->_usedProperties['alias'] = true;
             $this->alias = $value['alias'];
             unset($value['alias']);
         }
     
-        if (isset($value['type'])) {
+        if (array_key_exists('type', $value)) {
+            $this->_usedProperties['type'] = true;
             $this->type = $value['type'];
             unset($value['type']);
         }
     
-        if (isset($value['groups'])) {
+        if (array_key_exists('groups', $value)) {
+            $this->_usedProperties['groups'] = true;
             $this->groups = $value['groups'];
             unset($value['groups']);
         }
     
-        if (isset($value['areas'])) {
+        if (array_key_exists('areas', $value)) {
+            $this->_usedProperties['areas'] = true;
             $this->areas = $value['areas'];
             unset($value['areas']);
         }
@@ -95,16 +104,16 @@ class NamesConfig
     public function toArray(): array
     {
         $output = [];
-        if (null !== $this->alias) {
+        if (isset($this->_usedProperties['alias'])) {
             $output['alias'] = $this->alias;
         }
-        if (null !== $this->type) {
+        if (isset($this->_usedProperties['type'])) {
             $output['type'] = $this->type;
         }
-        if (null !== $this->groups) {
+        if (isset($this->_usedProperties['groups'])) {
             $output['groups'] = $this->groups;
         }
-        if (null !== $this->areas) {
+        if (isset($this->_usedProperties['areas'])) {
             $output['areas'] = $this->areas;
         }
     

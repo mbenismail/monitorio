@@ -8,13 +8,14 @@ use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 
 
 /**
- * This class is automatically generated to help creating config.
+ * This class is automatically generated to help in creating a config.
  */
 class AuthorizationHeaderConfig 
 {
     private $enabled;
     private $prefix;
     private $name;
+    private $_usedProperties = [];
     
     /**
      * @default true
@@ -23,6 +24,7 @@ class AuthorizationHeaderConfig
      */
     public function enabled($value): self
     {
+        $this->_usedProperties['enabled'] = true;
         $this->enabled = $value;
     
         return $this;
@@ -35,6 +37,7 @@ class AuthorizationHeaderConfig
      */
     public function prefix($value): self
     {
+        $this->_usedProperties['prefix'] = true;
         $this->prefix = $value;
     
         return $this;
@@ -47,6 +50,7 @@ class AuthorizationHeaderConfig
      */
     public function name($value): self
     {
+        $this->_usedProperties['name'] = true;
         $this->name = $value;
     
         return $this;
@@ -55,17 +59,20 @@ class AuthorizationHeaderConfig
     public function __construct(array $value = [])
     {
     
-        if (isset($value['enabled'])) {
+        if (array_key_exists('enabled', $value)) {
+            $this->_usedProperties['enabled'] = true;
             $this->enabled = $value['enabled'];
             unset($value['enabled']);
         }
     
-        if (isset($value['prefix'])) {
+        if (array_key_exists('prefix', $value)) {
+            $this->_usedProperties['prefix'] = true;
             $this->prefix = $value['prefix'];
             unset($value['prefix']);
         }
     
-        if (isset($value['name'])) {
+        if (array_key_exists('name', $value)) {
+            $this->_usedProperties['name'] = true;
             $this->name = $value['name'];
             unset($value['name']);
         }
@@ -78,13 +85,13 @@ class AuthorizationHeaderConfig
     public function toArray(): array
     {
         $output = [];
-        if (null !== $this->enabled) {
+        if (isset($this->_usedProperties['enabled'])) {
             $output['enabled'] = $this->enabled;
         }
-        if (null !== $this->prefix) {
+        if (isset($this->_usedProperties['prefix'])) {
             $output['prefix'] = $this->prefix;
         }
-        if (null !== $this->name) {
+        if (isset($this->_usedProperties['name'])) {
             $output['name'] = $this->name;
         }
     

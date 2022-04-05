@@ -9,8 +9,9 @@ namespace OpenApi\Annotations;
 use OpenApi\Generator;
 
 /**
- * Configuration details for a supported OAuth Flow
- * [OAuth Flow Object](https://swagger.io/specification/#oauthFlowObject).
+ * Configuration details for a supported OAuth Flow.
+ *
+ * @see [OAI OAuth Flow Object](https://swagger.io/specification/#oauthFlowObject)
  *
  * @Annotation
  */
@@ -18,6 +19,7 @@ class Flow extends AbstractAnnotation
 {
     /**
      * The authorization url to be used for this flow.
+     *
      * This must be in the form of a url.
      *
      * @var string
@@ -26,6 +28,7 @@ class Flow extends AbstractAnnotation
 
     /**
      * The token URL to be used for this flow.
+     *
      * This must be in the form of a url.
      *
      * @var string
@@ -34,6 +37,7 @@ class Flow extends AbstractAnnotation
 
     /**
      * The URL to be used for obtaining refresh tokens.
+     *
      * This must be in the form of a url.
      *
      * @var string

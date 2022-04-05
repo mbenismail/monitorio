@@ -11,7 +11,7 @@ use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 
 
 /**
- * This class is automatically generated to help creating config.
+ * This class is automatically generated to help in creating a config.
  */
 class TokenExtractorsConfig 
 {
@@ -19,10 +19,12 @@ class TokenExtractorsConfig
     private $cookie;
     private $queryParameter;
     private $splitCookie;
+    private $_usedProperties = [];
     
     public function authorizationHeader(array $value = []): \Symfony\Config\LexikJwtAuthentication\TokenExtractors\AuthorizationHeaderConfig
     {
         if (null === $this->authorizationHeader) {
+            $this->_usedProperties['authorizationHeader'] = true;
             $this->authorizationHeader = new \Symfony\Config\LexikJwtAuthentication\TokenExtractors\AuthorizationHeaderConfig($value);
         } elseif ([] !== $value) {
             throw new InvalidConfigurationException('The node created by "authorizationHeader()" has already been initialized. You cannot pass values the second time you call authorizationHeader().');
@@ -34,6 +36,7 @@ class TokenExtractorsConfig
     public function cookie(array $value = []): \Symfony\Config\LexikJwtAuthentication\TokenExtractors\CookieConfig
     {
         if (null === $this->cookie) {
+            $this->_usedProperties['cookie'] = true;
             $this->cookie = new \Symfony\Config\LexikJwtAuthentication\TokenExtractors\CookieConfig($value);
         } elseif ([] !== $value) {
             throw new InvalidConfigurationException('The node created by "cookie()" has already been initialized. You cannot pass values the second time you call cookie().');
@@ -45,6 +48,7 @@ class TokenExtractorsConfig
     public function queryParameter(array $value = []): \Symfony\Config\LexikJwtAuthentication\TokenExtractors\QueryParameterConfig
     {
         if (null === $this->queryParameter) {
+            $this->_usedProperties['queryParameter'] = true;
             $this->queryParameter = new \Symfony\Config\LexikJwtAuthentication\TokenExtractors\QueryParameterConfig($value);
         } elseif ([] !== $value) {
             throw new InvalidConfigurationException('The node created by "queryParameter()" has already been initialized. You cannot pass values the second time you call queryParameter().');
@@ -56,6 +60,7 @@ class TokenExtractorsConfig
     public function splitCookie(array $value = []): \Symfony\Config\LexikJwtAuthentication\TokenExtractors\SplitCookieConfig
     {
         if (null === $this->splitCookie) {
+            $this->_usedProperties['splitCookie'] = true;
             $this->splitCookie = new \Symfony\Config\LexikJwtAuthentication\TokenExtractors\SplitCookieConfig($value);
         } elseif ([] !== $value) {
             throw new InvalidConfigurationException('The node created by "splitCookie()" has already been initialized. You cannot pass values the second time you call splitCookie().');
@@ -67,22 +72,26 @@ class TokenExtractorsConfig
     public function __construct(array $value = [])
     {
     
-        if (isset($value['authorization_header'])) {
+        if (array_key_exists('authorization_header', $value)) {
+            $this->_usedProperties['authorizationHeader'] = true;
             $this->authorizationHeader = new \Symfony\Config\LexikJwtAuthentication\TokenExtractors\AuthorizationHeaderConfig($value['authorization_header']);
             unset($value['authorization_header']);
         }
     
-        if (isset($value['cookie'])) {
+        if (array_key_exists('cookie', $value)) {
+            $this->_usedProperties['cookie'] = true;
             $this->cookie = new \Symfony\Config\LexikJwtAuthentication\TokenExtractors\CookieConfig($value['cookie']);
             unset($value['cookie']);
         }
     
-        if (isset($value['query_parameter'])) {
+        if (array_key_exists('query_parameter', $value)) {
+            $this->_usedProperties['queryParameter'] = true;
             $this->queryParameter = new \Symfony\Config\LexikJwtAuthentication\TokenExtractors\QueryParameterConfig($value['query_parameter']);
             unset($value['query_parameter']);
         }
     
-        if (isset($value['split_cookie'])) {
+        if (array_key_exists('split_cookie', $value)) {
+            $this->_usedProperties['splitCookie'] = true;
             $this->splitCookie = new \Symfony\Config\LexikJwtAuthentication\TokenExtractors\SplitCookieConfig($value['split_cookie']);
             unset($value['split_cookie']);
         }
@@ -95,16 +104,16 @@ class TokenExtractorsConfig
     public function toArray(): array
     {
         $output = [];
-        if (null !== $this->authorizationHeader) {
+        if (isset($this->_usedProperties['authorizationHeader'])) {
             $output['authorization_header'] = $this->authorizationHeader->toArray();
         }
-        if (null !== $this->cookie) {
+        if (isset($this->_usedProperties['cookie'])) {
             $output['cookie'] = $this->cookie->toArray();
         }
-        if (null !== $this->queryParameter) {
+        if (isset($this->_usedProperties['queryParameter'])) {
             $output['query_parameter'] = $this->queryParameter->toArray();
         }
-        if (null !== $this->splitCookie) {
+        if (isset($this->_usedProperties['splitCookie'])) {
             $output['split_cookie'] = $this->splitCookie->toArray();
         }
     

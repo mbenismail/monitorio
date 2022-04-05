@@ -126,7 +126,7 @@ class User implements \JsonSerializable
 
     public function getPwd(): ?string
     {
-        return $this->Pwd;
+        return $this->$Pwd;
     }
 
     public function setPwd(?string $Pwd): self

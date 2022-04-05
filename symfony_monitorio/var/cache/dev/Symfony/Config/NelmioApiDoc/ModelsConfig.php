@@ -9,12 +9,13 @@ use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 
 
 /**
- * This class is automatically generated to help creating config.
+ * This class is automatically generated to help in creating a config.
  */
 class ModelsConfig 
 {
     private $useJms;
     private $names;
+    private $_usedProperties = [];
     
     /**
      * @default false
@@ -23,6 +24,7 @@ class ModelsConfig
      */
     public function useJms($value): self
     {
+        $this->_usedProperties['useJms'] = true;
         $this->useJms = $value;
     
         return $this;
@@ -30,18 +32,22 @@ class ModelsConfig
     
     public function names(array $value = []): \Symfony\Config\NelmioApiDoc\Models\NamesConfig
     {
+        $this->_usedProperties['names'] = true;
+    
         return $this->names[] = new \Symfony\Config\NelmioApiDoc\Models\NamesConfig($value);
     }
     
     public function __construct(array $value = [])
     {
     
-        if (isset($value['use_jms'])) {
+        if (array_key_exists('use_jms', $value)) {
+            $this->_usedProperties['useJms'] = true;
             $this->useJms = $value['use_jms'];
             unset($value['use_jms']);
         }
     
-        if (isset($value['names'])) {
+        if (array_key_exists('names', $value)) {
+            $this->_usedProperties['names'] = true;
             $this->names = array_map(function ($v) { return new \Symfony\Config\NelmioApiDoc\Models\NamesConfig($v); }, $value['names']);
             unset($value['names']);
         }
@@ -54,10 +60,10 @@ class ModelsConfig
     public function toArray(): array
     {
         $output = [];
-        if (null !== $this->useJms) {
+        if (isset($this->_usedProperties['useJms'])) {
             $output['use_jms'] = $this->useJms;
         }
-        if (null !== $this->names) {
+        if (isset($this->_usedProperties['names'])) {
             $output['names'] = array_map(function ($v) { return $v->toArray(); }, $this->names);
         }
     

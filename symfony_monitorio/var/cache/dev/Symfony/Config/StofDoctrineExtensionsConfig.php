@@ -12,7 +12,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator;
 
 
 /**
- * This class is automatically generated to help creating config.
+ * This class is automatically generated to help in creating a config.
  */
 class StofDoctrineExtensionsConfig implements \Symfony\Component\Config\Builder\ConfigBuilderInterface
 {
@@ -24,10 +24,13 @@ class StofDoctrineExtensionsConfig implements \Symfony\Component\Config\Builder\
     private $translationFallback;
     private $persistDefaultTranslation;
     private $skipTranslationOnLoad;
+    private $_usedProperties = [];
     
     public function orm(string $id, array $value = []): \Symfony\Config\StofDoctrineExtensions\OrmConfig
     {
         if (!isset($this->orm[$id])) {
+            $this->_usedProperties['orm'] = true;
+    
             return $this->orm[$id] = new \Symfony\Config\StofDoctrineExtensions\OrmConfig($value);
         }
         if ([] === $value) {
@@ -40,6 +43,8 @@ class StofDoctrineExtensionsConfig implements \Symfony\Component\Config\Builder\
     public function mongodb(string $id, array $value = []): \Symfony\Config\StofDoctrineExtensions\MongodbConfig
     {
         if (!isset($this->mongodb[$id])) {
+            $this->_usedProperties['mongodb'] = true;
+    
             return $this->mongodb[$id] = new \Symfony\Config\StofDoctrineExtensions\MongodbConfig($value);
         }
         if ([] === $value) {
@@ -52,6 +57,7 @@ class StofDoctrineExtensionsConfig implements \Symfony\Component\Config\Builder\
     public function class(array $value = []): \Symfony\Config\StofDoctrineExtensions\ClassConfig
     {
         if (null === $this->class) {
+            $this->_usedProperties['class'] = true;
             $this->class = new \Symfony\Config\StofDoctrineExtensions\ClassConfig($value);
         } elseif ([] !== $value) {
             throw new InvalidConfigurationException('The node created by "class()" has already been initialized. You cannot pass values the second time you call class().');
@@ -63,6 +69,7 @@ class StofDoctrineExtensionsConfig implements \Symfony\Component\Config\Builder\
     public function uploadable(array $value = []): \Symfony\Config\StofDoctrineExtensions\UploadableConfig
     {
         if (null === $this->uploadable) {
+            $this->_usedProperties['uploadable'] = true;
             $this->uploadable = new \Symfony\Config\StofDoctrineExtensions\UploadableConfig($value);
         } elseif ([] !== $value) {
             throw new InvalidConfigurationException('The node created by "uploadable()" has already been initialized. You cannot pass values the second time you call uploadable().');
@@ -78,6 +85,7 @@ class StofDoctrineExtensionsConfig implements \Symfony\Component\Config\Builder\
      */
     public function defaultLocale($value): self
     {
+        $this->_usedProperties['defaultLocale'] = true;
         $this->defaultLocale = $value;
     
         return $this;
@@ -90,6 +98,7 @@ class StofDoctrineExtensionsConfig implements \Symfony\Component\Config\Builder\
      */
     public function translationFallback($value): self
     {
+        $this->_usedProperties['translationFallback'] = true;
         $this->translationFallback = $value;
     
         return $this;
@@ -102,6 +111,7 @@ class StofDoctrineExtensionsConfig implements \Symfony\Component\Config\Builder\
      */
     public function persistDefaultTranslation($value): self
     {
+        $this->_usedProperties['persistDefaultTranslation'] = true;
         $this->persistDefaultTranslation = $value;
     
         return $this;
@@ -114,6 +124,7 @@ class StofDoctrineExtensionsConfig implements \Symfony\Component\Config\Builder\
      */
     public function skipTranslationOnLoad($value): self
     {
+        $this->_usedProperties['skipTranslationOnLoad'] = true;
         $this->skipTranslationOnLoad = $value;
     
         return $this;
@@ -127,42 +138,50 @@ class StofDoctrineExtensionsConfig implements \Symfony\Component\Config\Builder\
     public function __construct(array $value = [])
     {
     
-        if (isset($value['orm'])) {
+        if (array_key_exists('orm', $value)) {
+            $this->_usedProperties['orm'] = true;
             $this->orm = array_map(function ($v) { return new \Symfony\Config\StofDoctrineExtensions\OrmConfig($v); }, $value['orm']);
             unset($value['orm']);
         }
     
-        if (isset($value['mongodb'])) {
+        if (array_key_exists('mongodb', $value)) {
+            $this->_usedProperties['mongodb'] = true;
             $this->mongodb = array_map(function ($v) { return new \Symfony\Config\StofDoctrineExtensions\MongodbConfig($v); }, $value['mongodb']);
             unset($value['mongodb']);
         }
     
-        if (isset($value['class'])) {
+        if (array_key_exists('class', $value)) {
+            $this->_usedProperties['class'] = true;
             $this->class = new \Symfony\Config\StofDoctrineExtensions\ClassConfig($value['class']);
             unset($value['class']);
         }
     
-        if (isset($value['uploadable'])) {
+        if (array_key_exists('uploadable', $value)) {
+            $this->_usedProperties['uploadable'] = true;
             $this->uploadable = new \Symfony\Config\StofDoctrineExtensions\UploadableConfig($value['uploadable']);
             unset($value['uploadable']);
         }
     
-        if (isset($value['default_locale'])) {
+        if (array_key_exists('default_locale', $value)) {
+            $this->_usedProperties['defaultLocale'] = true;
             $this->defaultLocale = $value['default_locale'];
             unset($value['default_locale']);
         }
     
-        if (isset($value['translation_fallback'])) {
+        if (array_key_exists('translation_fallback', $value)) {
+            $this->_usedProperties['translationFallback'] = true;
             $this->translationFallback = $value['translation_fallback'];
             unset($value['translation_fallback']);
         }
     
-        if (isset($value['persist_default_translation'])) {
+        if (array_key_exists('persist_default_translation', $value)) {
+            $this->_usedProperties['persistDefaultTranslation'] = true;
             $this->persistDefaultTranslation = $value['persist_default_translation'];
             unset($value['persist_default_translation']);
         }
     
-        if (isset($value['skip_translation_on_load'])) {
+        if (array_key_exists('skip_translation_on_load', $value)) {
+            $this->_usedProperties['skipTranslationOnLoad'] = true;
             $this->skipTranslationOnLoad = $value['skip_translation_on_load'];
             unset($value['skip_translation_on_load']);
         }
@@ -175,28 +194,28 @@ class StofDoctrineExtensionsConfig implements \Symfony\Component\Config\Builder\
     public function toArray(): array
     {
         $output = [];
-        if (null !== $this->orm) {
+        if (isset($this->_usedProperties['orm'])) {
             $output['orm'] = array_map(function ($v) { return $v->toArray(); }, $this->orm);
         }
-        if (null !== $this->mongodb) {
+        if (isset($this->_usedProperties['mongodb'])) {
             $output['mongodb'] = array_map(function ($v) { return $v->toArray(); }, $this->mongodb);
         }
-        if (null !== $this->class) {
+        if (isset($this->_usedProperties['class'])) {
             $output['class'] = $this->class->toArray();
         }
-        if (null !== $this->uploadable) {
+        if (isset($this->_usedProperties['uploadable'])) {
             $output['uploadable'] = $this->uploadable->toArray();
         }
-        if (null !== $this->defaultLocale) {
+        if (isset($this->_usedProperties['defaultLocale'])) {
             $output['default_locale'] = $this->defaultLocale;
         }
-        if (null !== $this->translationFallback) {
+        if (isset($this->_usedProperties['translationFallback'])) {
             $output['translation_fallback'] = $this->translationFallback;
         }
-        if (null !== $this->persistDefaultTranslation) {
+        if (isset($this->_usedProperties['persistDefaultTranslation'])) {
             $output['persist_default_translation'] = $this->persistDefaultTranslation;
         }
-        if (null !== $this->skipTranslationOnLoad) {
+        if (isset($this->_usedProperties['skipTranslationOnLoad'])) {
             $output['skip_translation_on_load'] = $this->skipTranslationOnLoad;
         }
     

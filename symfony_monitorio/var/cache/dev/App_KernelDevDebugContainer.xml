@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.project_dir">/home/user/Documents/GitHub/monitorio/symfony_monitorio</parameter>
+    <parameter key="kernel.project_dir">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.runtime_environment">%env(default:kernel.environment:APP_RUNTIME_ENV)%</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.build_dir">/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev</parameter>
-    <parameter key="kernel.cache_dir">/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev</parameter>
-    <parameter key="kernel.logs_dir">/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/log</parameter>
+    <parameter key="kernel.build_dir">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev</parameter>
+    <parameter key="kernel.cache_dir">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev</parameter>
+    <parameter key="kernel.logs_dir">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
@@ -29,71 +29,71 @@
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/framework-bundle</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
       <parameter key="DoctrineBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/doctrine-bundle</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\doctrine\doctrine-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
       </parameter>
       <parameter key="DoctrineMigrationsBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/doctrine-migrations-bundle</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\doctrine\doctrine-migrations-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
       </parameter>
       <parameter key="DebugBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/debug-bundle</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\debug-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\DebugBundle</parameter>
       </parameter>
       <parameter key="TwigBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/twig-bundle</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\twig-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
       </parameter>
       <parameter key="WebProfilerBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/web-profiler-bundle</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\web-profiler-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebProfilerBundle</parameter>
       </parameter>
       <parameter key="WebpackEncoreBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/webpack-encore-bundle/src</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\webpack-encore-bundle\src</parameter>
         <parameter key="namespace">Symfony\WebpackEncoreBundle</parameter>
       </parameter>
       <parameter key="TwigExtraBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/twig/extra-bundle</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\twig\extra-bundle</parameter>
         <parameter key="namespace">Twig\Extra\TwigExtraBundle</parameter>
       </parameter>
       <parameter key="SecurityBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-bundle</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\SecurityBundle</parameter>
       </parameter>
       <parameter key="MonologBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/monolog-bundle</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\monolog-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\MonologBundle</parameter>
       </parameter>
       <parameter key="MakerBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/maker-bundle/src</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\maker-bundle\src</parameter>
         <parameter key="namespace">Symfony\Bundle\MakerBundle</parameter>
       </parameter>
       <parameter key="SensioFrameworkExtraBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/sensio/framework-extra-bundle/src</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\sensio\framework-extra-bundle\src</parameter>
         <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
       <parameter key="StofDoctrineExtensionsBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/stof/doctrine-extensions-bundle/src</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\stof\doctrine-extensions-bundle\src</parameter>
         <parameter key="namespace">Stof\DoctrineExtensionsBundle</parameter>
       </parameter>
       <parameter key="DoctrineFixturesBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/doctrine-fixtures-bundle</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\doctrine\doctrine-fixtures-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\FixturesBundle</parameter>
       </parameter>
       <parameter key="NelmioCorsBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/nelmio/cors-bundle</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\nelmio\cors-bundle</parameter>
         <parameter key="namespace">Nelmio\CorsBundle</parameter>
       </parameter>
       <parameter key="NelmioApiDocBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/nelmio/api-doc-bundle</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\nelmio\api-doc-bundle</parameter>
         <parameter key="namespace">Nelmio\ApiDocBundle</parameter>
       </parameter>
       <parameter key="LexikJWTAuthenticationBundle" type="collection">
-        <parameter key="path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/lexik/jwt-authentication-bundle</parameter>
+        <parameter key="path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\lexik\jwt-authentication-bundle</parameter>
         <parameter key="namespace">Lexik\Bundle\JWTAuthenticationBundle</parameter>
       </parameter>
     </parameter>
@@ -134,17 +134,17 @@
     <parameter key="asset.request_context.base_path">null</parameter>
     <parameter key="asset.request_context.secure">null</parameter>
     <parameter key="translator.logging">false</parameter>
-    <parameter key="translator.default_path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/translations</parameter>
+    <parameter key="translator.default_path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/translations</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/App_KernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/App_KernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
     <parameter key="router.resource">kernel::loadRoutes</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
-    <parameter key="serializer.mapping.cache.file">/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/serialization.php</parameter>
-    <parameter key="cache.prefix.seed">_/home/user/Documents/GitHub/monitorio/symfony_monitorio.App_KernelDevDebugContainer</parameter>
+    <parameter key="serializer.mapping.cache.file">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/serialization.php</parameter>
+    <parameter key="cache.prefix.seed">_C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio.App_KernelDevDebugContainer</parameter>
     <parameter key="session.metadata.storage_key">_sf2_meta</parameter>
     <parameter key="session.storage.options" type="collection">
       <parameter key="cache_limiter" type="string">0</parameter>
@@ -153,15 +153,15 @@
       <parameter key="cookie_samesite">lax</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/sessions</parameter>
+    <parameter key="session.save_path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
-    <parameter key="validator.mapping.cache.file">/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/validation.php</parameter>
+    <parameter key="validator.mapping.cache.file">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_main_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/profiler</parameter>
     <parameter key="doctrine.dbal.logger.chain.class">Doctrine\DBAL\Logging\LoggerChain</parameter>
     <parameter key="doctrine.dbal.logger.profiling.class">Doctrine\DBAL\Logging\DebugStack</parameter>
     <parameter key="doctrine.dbal.logger.class">Symfony\Bridge\Doctrine\Logger\DbalLogger</parameter>
@@ -228,7 +228,7 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="doctrine.migrations.preferred_em">null</parameter>
     <parameter key="doctrine.migrations.preferred_connection">null</parameter>
@@ -236,7 +236,7 @@
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
-    <parameter key="twig.default_path">/home/user/Documents/GitHub/monitorio/symfony_monitorio/templates</parameter>
+    <parameter key="twig.default_path">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/templates</parameter>
     <parameter key="web_profiler.debug_toolbar.intercept_redirects">false</parameter>
     <parameter key="web_profiler.debug_toolbar.mode">2</parameter>
     <parameter key="security.role_hierarchy.roles" type="collection"/>
@@ -421,18 +421,19 @@
       <tag name="controller.service_arguments"/>
       <tag name="routing.route_loader"/>
     </service>
+    <service id="App\Controller\MailController" class="App\Controller\MailController" autowire="true" autoconfigure="true"/>
     <service id="App\Controller\ProfilController" class="App\Controller\ProfilController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
       <call method="setContainer">
-        <argument type="service" id=".service_locator.mx0UMmY.App\Controller\ProfilController"/>
+        <argument type="service" id=".service_locator.GNc8e5B.App\Controller\ProfilController"/>
       </call>
     </service>
     <service id="App\Controller\UserController" class="App\Controller\UserController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
       <call method="setContainer">
-        <argument type="service" id=".service_locator.mx0UMmY.App\Controller\UserController"/>
+        <argument type="service" id=".service_locator.GNc8e5B.App\Controller\UserController"/>
       </call>
     </service>
     <service id="App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" autowire="true" autoconfigure="true">
@@ -521,7 +522,7 @@
       </argument>
     </service>
     <service id="http_cache.store" class="Symfony\Component\HttpKernel\HttpCache\Store">
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/http_cache</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/http_cache</argument>
     </service>
     <service id="url_helper" class="Symfony\Component\HttpFoundation\UrlHelper">
       <argument type="service" id="request_stack"/>
@@ -531,7 +532,7 @@
       <tag name="container.no_preload"/>
       <argument type="tagged_iterator" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/App_KernelDevDebugContainerDeprecations.log</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/App_KernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer" public="true">
       <tag name="container.private" package="symfony/framework-bundle" version="5.2"/>
@@ -739,7 +740,7 @@
       </argument>
       <argument>UTF-8</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</argument>
       <argument type="service">
         <service>
           <argument type="service" id="request_stack"/>
@@ -772,7 +773,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="filesystem"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</argument>
       <call method="setName">
         <argument>assets:install</argument>
       </call>
@@ -944,7 +945,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument>dev</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</argument>
       <call method="setName">
         <argument>debug:dotenv</argument>
       </call>
@@ -955,7 +956,7 @@
     <service id="console.command.event_dispatcher_debug" class="Symfony\Bundle\FrameworkBundle\Command\EventDispatcherDebugCommand">
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
-      <argument type="service" id=".service_locator.XsyfP82"/>
+      <argument type="service" id=".service_locator.jlyTfzM"/>
       <call method="setName">
         <argument>debug:event-dispatcher</argument>
       </call>
@@ -1119,16 +1120,16 @@
       <argument type="service" id="translator.data_collector"/>
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/translations</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/templates</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/translations</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/templates</argument>
       <argument type="collection">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations</argument>
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations</argument>
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations</argument>
       </argument>
       <argument type="collection">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/twig-bridge/Resources/views/Email</argument>
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\twig-bridge/Resources/views/Email</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\twig-bridge/Resources/views/Form</argument>
       </argument>
       <argument type="collection"/>
       <call method="setName">
@@ -1145,16 +1146,16 @@
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
       <argument>en</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/translations</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/templates</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/translations</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/templates</argument>
       <argument type="collection">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations</argument>
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations</argument>
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations</argument>
       </argument>
       <argument type="collection">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/twig-bridge/Resources/views/Email</argument>
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\twig-bridge/Resources/views/Email</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\twig-bridge/Resources/views/Form</argument>
       </argument>
       <argument type="collection"/>
       <call method="setName">
@@ -1387,7 +1388,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1417,7 +1418,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/pools/app</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
@@ -1583,7 +1584,7 @@
       <deprecated package="symfony/framework-bundle" version="5.3">The "%service_id%" service is deprecated, use "assets.json_manifest_version_strategy" instead.</deprecated>
     </service>
     <service id="assets._version__default" class="Symfony\Component\Asset\VersionStrategy\JsonManifestVersionStrategy">
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/public/build/manifest.json</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/public/build/manifest.json</argument>
       <argument type="service" id=".debug.http_client" on-invalid="null"/>
       <argument>false</argument>
     </service>
@@ -1632,6 +1633,12 @@
     </service>
     <service id="mailer.transport_factory.abstract" class="Symfony\Component\Mailer\Transport\AbstractTransportFactory" abstract="true">
       <tag name="monolog.logger" channel="mailer"/>
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument type="service" id=".debug.http_client" on-invalid="ignore"/>
+      <argument type="service" id="monolog.logger.mailer" on-invalid="ignore"/>
+    </service>
+    <service id="mailer.transport_factory.sendgrid" class="Symfony\Component\Mailer\Bridge\Sendgrid\Transport\SendgridTransportFactory">
+      <tag name="mailer.transport_factory"/>
       <argument type="service" id="debug.event_dispatcher"/>
       <argument type="service" id=".debug.http_client" on-invalid="ignore"/>
       <argument type="service" id="monolog.logger.mailer" on-invalid="ignore"/>
@@ -1703,329 +1710,329 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/translations</argument>
+        <argument key="cache_dir">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
           <argument key="af" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.af.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.af.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.af.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.af.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.af.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.af.xlf</argument>
           </argument>
           <argument key="ar" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.ar.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.ar.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.ar.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.ar.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.ar.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.ar.xlf</argument>
           </argument>
           <argument key="az" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.az.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.az.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.az.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.az.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.az.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.az.xlf</argument>
           </argument>
           <argument key="be" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.be.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.be.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.be.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.be.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.be.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.be.xlf</argument>
           </argument>
           <argument key="bg" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.bg.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.bg.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.bg.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.bg.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.bg.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.bg.xlf</argument>
           </argument>
           <argument key="bs" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.bs.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.bs.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.bs.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.bs.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.bs.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.bs.xlf</argument>
           </argument>
           <argument key="ca" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.ca.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.ca.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.ca.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.ca.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.ca.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.ca.xlf</argument>
           </argument>
           <argument key="cs" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.cs.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.cs.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.cs.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.cs.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.cs.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.cs.xlf</argument>
           </argument>
           <argument key="cy" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.cy.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.cy.xlf</argument>
           </argument>
           <argument key="da" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.da.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.da.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.da.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.da.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.da.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.da.xlf</argument>
           </argument>
           <argument key="de" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.de.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.de.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.de.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.de.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.de.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.de.xlf</argument>
           </argument>
           <argument key="el" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.el.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.el.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.el.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.el.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.el.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.el.xlf</argument>
           </argument>
           <argument key="en" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.en.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.en.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.en.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.en.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.en.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.en.xlf</argument>
           </argument>
           <argument key="es" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.es.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.es.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.es.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.es.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.es.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.es.xlf</argument>
           </argument>
           <argument key="et" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.et.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.et.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.et.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.et.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.et.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.et.xlf</argument>
           </argument>
           <argument key="eu" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.eu.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.eu.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.eu.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.eu.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.eu.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.eu.xlf</argument>
           </argument>
           <argument key="fa" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.fa.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.fa.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.fa.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.fa.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.fa.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.fa.xlf</argument>
           </argument>
           <argument key="fi" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.fi.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.fi.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.fi.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.fi.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.fi.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.fi.xlf</argument>
           </argument>
           <argument key="fr" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.fr.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.fr.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.fr.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.fr.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.fr.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.fr.xlf</argument>
           </argument>
           <argument key="gl" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.gl.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.gl.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.gl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.gl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.gl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.gl.xlf</argument>
           </argument>
           <argument key="he" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.he.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.he.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.he.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.he.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.he.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.he.xlf</argument>
           </argument>
           <argument key="hr" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.hr.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.hr.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.hr.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.hr.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.hr.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.hr.xlf</argument>
           </argument>
           <argument key="hu" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.hu.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.hu.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.hu.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.hu.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.hu.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.hu.xlf</argument>
           </argument>
           <argument key="hy" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.hy.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.hy.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.hy.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.hy.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.hy.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.hy.xlf</argument>
           </argument>
           <argument key="id" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.id.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.id.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.id.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.id.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.id.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.id.xlf</argument>
           </argument>
           <argument key="it" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.it.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.it.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.it.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.it.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.it.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.it.xlf</argument>
           </argument>
           <argument key="ja" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.ja.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.ja.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.ja.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.ja.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.ja.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.ja.xlf</argument>
           </argument>
           <argument key="lb" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.lb.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.lb.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.lb.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.lb.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.lb.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.lb.xlf</argument>
           </argument>
           <argument key="lt" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.lt.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.lt.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.lt.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.lt.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.lt.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.lt.xlf</argument>
           </argument>
           <argument key="lv" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.lv.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.lv.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.lv.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.lv.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.lv.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.lv.xlf</argument>
           </argument>
           <argument key="mn" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.mn.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.mn.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.mn.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.mn.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.mn.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.mn.xlf</argument>
           </argument>
           <argument key="my" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.my.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.my.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.my.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.my.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.my.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.my.xlf</argument>
           </argument>
           <argument key="nb" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.nb.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.nb.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.nb.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.nb.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.nb.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.nb.xlf</argument>
           </argument>
           <argument key="nl" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.nl.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.nl.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.nl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.nl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.nl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.nl.xlf</argument>
           </argument>
           <argument key="nn" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.nn.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.nn.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.nn.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.nn.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.nn.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.nn.xlf</argument>
           </argument>
           <argument key="no" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.no.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.no.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.no.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.no.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.no.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.no.xlf</argument>
           </argument>
           <argument key="pl" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.pl.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.pl.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.pl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.pl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.pl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.pl.xlf</argument>
           </argument>
           <argument key="pt" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.pt.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.pt.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.pt.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.pt.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.pt.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.pt.xlf</argument>
           </argument>
           <argument key="pt_BR" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.pt_BR.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.pt_BR.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.pt_BR.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.pt_BR.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.pt_BR.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.pt_BR.xlf</argument>
           </argument>
           <argument key="ro" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.ro.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.ro.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.ro.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.ro.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.ro.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.ro.xlf</argument>
           </argument>
           <argument key="ru" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.ru.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.ru.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.ru.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.ru.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.ru.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.ru.xlf</argument>
           </argument>
           <argument key="sk" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.sk.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.sk.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.sk.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.sk.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.sk.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.sk.xlf</argument>
           </argument>
           <argument key="sl" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.sl.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.sl.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.sl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.sl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.sl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.sl.xlf</argument>
           </argument>
           <argument key="sq" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.sq.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.sq.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.sq.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.sq.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.sq.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.sq.xlf</argument>
           </argument>
           <argument key="sr_Cyrl" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.sr_Cyrl.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.sr_Cyrl.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.sr_Cyrl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.sr_Cyrl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.sr_Cyrl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.sr_Cyrl.xlf</argument>
           </argument>
           <argument key="sr_Latn" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.sr_Latn.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.sr_Latn.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.sr_Latn.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.sr_Latn.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.sr_Latn.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.sr_Latn.xlf</argument>
           </argument>
           <argument key="sv" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.sv.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.sv.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.sv.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.sv.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.sv.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.sv.xlf</argument>
           </argument>
           <argument key="th" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.th.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.th.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.th.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.th.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.th.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.th.xlf</argument>
           </argument>
           <argument key="tl" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.tl.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.tl.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.tl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.tl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.tl.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.tl.xlf</argument>
           </argument>
           <argument key="tr" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.tr.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.tr.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.tr.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.tr.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.tr.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.tr.xlf</argument>
           </argument>
           <argument key="uk" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.uk.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.uk.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.uk.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.uk.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.uk.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.uk.xlf</argument>
           </argument>
           <argument key="uz" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.uz.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.uz.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.uz.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.uz.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.uz.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.uz.xlf</argument>
           </argument>
           <argument key="vi" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.vi.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.vi.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.vi.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.vi.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.vi.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.vi.xlf</argument>
           </argument>
           <argument key="zh_CN" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.zh_CN.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.zh_CN.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.zh_CN.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.zh_CN.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.zh_CN.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.zh_CN.xlf</argument>
           </argument>
           <argument key="zh_TW" type="collection">
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations/validators.zh_TW.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations/validators.zh_TW.xlf</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations/security.zh_TW.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations\validators.zh_TW.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations\validators.zh_TW.xlf</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations\security.zh_TW.xlf</argument>
           </argument>
         </argument>
         <argument key="scanned_directories" type="collection">
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/validator/Resources/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-core/Resources/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/framework-bundle/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/doctrine-bundle/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/doctrine-migrations-bundle/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/debug-bundle/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/twig-bundle/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/web-profiler-bundle/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/webpack-encore-bundle/src/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/twig/extra-bundle/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-bundle/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/monolog-bundle/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/maker-bundle/src/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/sensio/framework-extra-bundle/src/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/stof/doctrine-extensions-bundle/src/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/doctrine-fixtures-bundle/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/nelmio/cors-bundle/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/nelmio/api-doc-bundle/translations</argument>
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/lexik/jwt-authentication-bundle/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\framework-bundle/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\doctrine\doctrine-bundle/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\debug-bundle/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\twig-bundle/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\web-profiler-bundle/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\webpack-encore-bundle\src/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\twig\extra-bundle/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-bundle/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\monolog-bundle/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\maker-bundle\src/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\sensio\framework-extra-bundle\src/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\stof\doctrine-extensions-bundle\src/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\doctrine\doctrine-fixtures-bundle/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\nelmio\cors-bundle/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\nelmio\api-doc-bundle/translations</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\lexik\jwt-authentication-bundle/translations</argument>
         </argument>
         <argument key="cache_vary" type="collection">
           <argument key="scanned_directories" type="collection">
-            <argument>vendor/symfony/validator/Resources/translations</argument>
-            <argument>vendor/symfony/form/Resources/translations</argument>
-            <argument>vendor/symfony/security-core/Resources/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\validator/Resources/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-core/Resources/translations</argument>
             <argument>translations</argument>
-            <argument>vendor/symfony/framework-bundle/translations</argument>
-            <argument>vendor/doctrine/doctrine-bundle/translations</argument>
-            <argument>vendor/doctrine/doctrine-migrations-bundle/translations</argument>
-            <argument>vendor/symfony/debug-bundle/translations</argument>
-            <argument>vendor/symfony/twig-bundle/translations</argument>
-            <argument>vendor/symfony/web-profiler-bundle/translations</argument>
-            <argument>vendor/symfony/webpack-encore-bundle/src/translations</argument>
-            <argument>vendor/twig/extra-bundle/translations</argument>
-            <argument>vendor/symfony/security-bundle/translations</argument>
-            <argument>vendor/symfony/monolog-bundle/translations</argument>
-            <argument>vendor/symfony/maker-bundle/src/translations</argument>
-            <argument>vendor/sensio/framework-extra-bundle/src/translations</argument>
-            <argument>vendor/stof/doctrine-extensions-bundle/src/translations</argument>
-            <argument>vendor/doctrine/doctrine-fixtures-bundle/translations</argument>
-            <argument>vendor/nelmio/cors-bundle/translations</argument>
-            <argument>vendor/nelmio/api-doc-bundle/translations</argument>
-            <argument>vendor/lexik/jwt-authentication-bundle/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\framework-bundle/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\doctrine\doctrine-bundle/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\debug-bundle/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\twig-bundle/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\web-profiler-bundle/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\webpack-encore-bundle\src/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\twig\extra-bundle/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-bundle/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\monolog-bundle/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\maker-bundle\src/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\sensio\framework-extra-bundle\src/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\stof\doctrine-extensions-bundle\src/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\doctrine\doctrine-fixtures-bundle/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\nelmio\cors-bundle/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\nelmio\api-doc-bundle/translations</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\lexik\jwt-authentication-bundle/translations</argument>
           </argument>
         </argument>
       </argument>
@@ -2230,7 +2237,7 @@
     <service id="translation.warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TranslationsCacheWarmer">
       <tag name="container.service_subscriber" id="translator"/>
       <tag name="kernel.cache_warmer"/>
-      <argument type="service" id=".service_locator.wSgjnB6.translation.warmer"/>
+      <argument type="service" id=".service_locator.J4b.DPX.translation.warmer"/>
     </service>
     <service id="translation.provider_collection" class="Symfony\Component\Translation\Provider\TranslationProviderCollection">
       <argument type="collection"/>
@@ -2258,7 +2265,7 @@
     <service id="debug.file_link_formatter" class="Symfony\Component\HttpKernel\Debug\FileLinkFormatter">
       <argument>null</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</argument>
       <argument type="service_closure" id="debug.file_link_formatter.url_format"/>
     </service>
     <service id="debug.stopwatch" class="Symfony\Component\Stopwatch\Stopwatch">
@@ -2571,14 +2578,6 @@
         <argument>-100</argument>
       </call>
       <call method="addListener">
-        <argument>Symfony\Component\Messenger\Event\WorkerRunningEvent</argument>
-        <argument type="collection">
-          <argument type="service_closure" id="messenger.listener.dispatch_pcntl_signal_listener"/>
-          <argument>onWorkerRunning</argument>
-        </argument>
-        <argument>100</argument>
-      </call>
-      <call method="addListener">
         <argument>Symfony\Component\Messenger\Event\WorkerStartedEvent</argument>
         <argument type="collection">
           <argument type="service_closure" id="messenger.listener.stop_worker_on_restart_signal_listener"/>
@@ -2593,14 +2592,6 @@
           <argument>onWorkerRunning</argument>
         </argument>
         <argument>0</argument>
-      </call>
-      <call method="addListener">
-        <argument>Symfony\Component\Messenger\Event\WorkerStartedEvent</argument>
-        <argument type="collection">
-          <argument type="service_closure" id="messenger.listener.stop_worker_on_sigterm_signal_listener"/>
-          <argument>onWorkerStarted</argument>
-        </argument>
-        <argument>100</argument>
       </call>
       <call method="addListener">
         <argument>Symfony\Component\Messenger\Event\WorkerMessageFailedEvent</argument>
@@ -2951,7 +2942,7 @@
     </service>
     <service id="routing.loader.container" class="Symfony\Component\Routing\Loader\ContainerLoader">
       <tag name="routing.loader"/>
-      <argument type="service" id=".service_locator.XWmhzGa"/>
+      <argument type="service" id=".service_locator.kODoftA"/>
       <argument>dev</argument>
     </service>
     <service id="routing.loader" class="Symfony\Bundle\FrameworkBundle\Routing\DelegatingLoader" public="true">
@@ -2964,10 +2955,10 @@
     <service id="router.default" class="Symfony\Bundle\FrameworkBundle\Routing\Router">
       <tag name="monolog.logger" channel="router"/>
       <tag name="container.service_subscriber" id="routing.loader"/>
-      <argument type="service" id=".service_locator.NUKe30Y.router.default"/>
+      <argument type="service" id=".service_locator.491LSII.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev</argument>
+        <argument key="cache_dir">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -3001,12 +2992,12 @@
     </service>
     <service id="router.expression_language_provider" class="Symfony\Component\Routing\Matcher\ExpressionLanguageProvider">
       <tag name="routing.expression_language_provider"/>
-      <argument type="service" id=".service_locator.Kr.dDlB"/>
+      <argument type="service" id=".service_locator.1ZPWTRB"/>
     </service>
     <service id="router.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\RouterCacheWarmer">
       <tag name="container.service_subscriber" id="router"/>
       <tag name="kernel.cache_warmer"/>
-      <argument type="service" id=".service_locator.oCg4uHe.router.cache_warmer"/>
+      <argument type="service" id=".service_locator.HLwzKIm.router.cache_warmer"/>
     </service>
     <service id="router_listener" class="Symfony\Component\HttpKernel\EventListener\RouterListener">
       <tag name="kernel.event_subscriber"/>
@@ -3017,7 +3008,7 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="monolog.logger.request" on-invalid="ignore"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</argument>
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -3062,14 +3053,14 @@
         <argument>class_exists</argument>
       </call>
     </service>
-    <service id="annotations.cached_reader" class="Doctrine\Common\Annotations\PsrCachedReader">
+    <service id="annotations.cached_reader" class="Doctrine\Common\Annotations\PsrCachedReader" public="true">
       <tag name="annotations.cached_reader"/>
       <argument type="service" id="annotations.reader"/>
       <argument type="service">
         <service class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
       </argument>
       <argument>true</argument>
-      <property name="cacheProviderBackup" type="service_closure" id="annotations.cache_adapter"/>
+      <argument type="service_closure" id="annotations.cache_adapter"/>
     </service>
     <service id="annotations.filesystem_cache_adapter" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
       <argument></argument>
@@ -3084,13 +3075,13 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/annotations.php</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/annotations.php</argument>
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!.*Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache_adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter">
       <tag name="container.hot_path"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/annotations.php</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -3108,7 +3099,7 @@
     </service>
     <service id="secrets.vault" class="Symfony\Bundle\FrameworkBundle\Secrets\SodiumVault">
       <tag name="container.env_var_loader"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
       <argument type="service" id="secrets.decryption_key" on-invalid="ignore"/>
     </service>
     <service id="secrets.decryption_key" class="Symfony\Component\String\LazyString">
@@ -3117,7 +3108,7 @@
       <factory class="Symfony\Component\String\LazyString" method="fromCallable"/>
     </service>
     <service id="secrets.local_vault" class="Symfony\Bundle\FrameworkBundle\Secrets\DotenvVault">
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/.env.dev.local</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/.env.dev.local</argument>
     </service>
     <service id="serializer" class="Symfony\Component\Serializer\Serializer" public="true">
       <tag name="container.private" package="symfony/framework-bundle" version="5.2"/>
@@ -3133,7 +3124,6 @@
         <argument type="service" id="serializer.normalizer.datetimezone"/>
         <argument type="service" id="serializer.normalizer.dateinterval"/>
         <argument type="service" id="serializer.normalizer.form_error"/>
-        <argument type="service" id="serializer.normalizer.backed_enum"/>
         <argument type="service" id="serializer.normalizer.data_uri"/>
         <argument type="service" id="serializer.denormalizer.array"/>
         <argument type="service" id="serializer.normalizer.object"/>
@@ -3231,10 +3221,10 @@
           </service>
         </argument>
       </argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/serialization.php</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/serialization.php</argument>
     </service>
     <service id="serializer.mapping.cache.symfony" class="Psr\Cache\CacheItemPoolInterface">
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/serialization.php</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/serialization.php</argument>
       <argument type="service" id="cache.serializer"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -3276,9 +3266,6 @@
           <factory class="Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer" method="isDebug"/>
         </service>
       </argument>
-    </service>
-    <service id="serializer.normalizer.backed_enum" class="Symfony\Component\Serializer\Normalizer\BackedEnumNormalizer">
-      <tag name="serializer.normalizer" priority="-915"/>
     </service>
     <service id="property_info" class="Symfony\Component\PropertyInfo\PropertyInfoExtractor">
       <argument type="iterator">
@@ -3371,7 +3358,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.factory.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorageFactory">
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/sessions</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\MetadataBag">
@@ -3403,7 +3390,7 @@
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\StrictSessionHandler">
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler">
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/sessions</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/sessions</argument>
         </service>
       </argument>
     </service>
@@ -3563,7 +3550,7 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/form/Resources/config/validation.xml</argument>
+          <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\form/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -3591,10 +3578,10 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/validation.php</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter">
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/validation.php</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/validation.php</argument>
       <argument type="service" id="cache.validator"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -3811,7 +3798,7 @@
       </argument>
     </service>
     <service id="notifier" class="Symfony\Component\Notifier\Notifier">
-      <argument type="service" id=".service_locator.UkE3SaZ"/>
+      <argument type="service" id=".service_locator.dw8O4oN"/>
       <argument type="service" id="notifier.channel_policy" on-invalid="ignore"/>
       <call method="addAdminRecipient">
         <argument type="service" id="notifier.admin_recipient.0"/>
@@ -3982,7 +3969,7 @@
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage">
-      <argument>file:/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/profiler</argument>
+      <argument>file:C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/profiler</argument>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener">
       <tag name="kernel.event_subscriber"/>
@@ -4029,7 +4016,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <argument type="service" id="monolog.logger.profiler" on-invalid="ignore"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/App_KernelDevDebugContainer</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/App_KernelDevDebugContainer</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector">
@@ -4166,7 +4153,7 @@
     <service id="doctrine.dbal.logger.backtrace" class="Doctrine\Bundle\DoctrineBundle\Dbal\Logging\BacktraceLogger" abstract="true"/>
     <service id="doctrine.dbal.logger" class="Symfony\Bridge\Doctrine\Logger\DbalLogger">
       <tag name="monolog.logger" channel="doctrine"/>
-      <argument type="service" id="monolog.logger.doctrine" on-invalid="null"/>
+      <argument>null</argument>
       <argument type="service" id="debug.stopwatch" on-invalid="null"/>
     </service>
     <service id="data_collector.doctrine" class="Doctrine\Bundle\DoctrineBundle\DataCollector\DoctrineDataCollector">
@@ -4239,6 +4226,15 @@
       <call method="setSQLLogger">
         <argument type="service" id="doctrine.dbal.logger.chain.default"/>
       </call>
+      <call method="setMiddlewares">
+        <argument type="collection">
+          <argument type="service">
+            <service class="Doctrine\DBAL\Logging\Middleware">
+              <argument type="service" id="monolog.logger.doctrine"/>
+            </service>
+          </argument>
+        </argument>
+      </call>
     </service>
     <service id="doctrine.dbal.logger.profiling.default" class="Doctrine\DBAL\Logging\DebugStack"/>
     <service id="doctrine.dbal.logger.chain.default" class="Doctrine\DBAL\Logging\LoggerChain">
@@ -4292,6 +4288,12 @@
         </service>
       </argument>
     </service>
+    <service id="doctrine.dbal.logging_middleware" class="Doctrine\DBAL\Logging\Middleware" abstract="true">
+      <tag name="monolog.logger" channel="doctrine"/>
+      <tag name="doctrine.middleware"/>
+      <tag name="doctrine.middleware" connection="default"/>
+      <argument type="service" id="monolog.logger.doctrine"/>
+    </service>
     <service id="messenger.middleware.doctrine_transaction" class="Symfony\Bridge\Doctrine\Messenger\DoctrineTransactionMiddleware" abstract="true">
       <argument type="service" id="doctrine"/>
     </service>
@@ -4300,6 +4302,11 @@
     </service>
     <service id="messenger.middleware.doctrine_close_connection" class="Symfony\Bridge\Doctrine\Messenger\DoctrineCloseConnectionMiddleware" abstract="true">
       <argument type="service" id="doctrine"/>
+    </service>
+    <service id="messenger.middleware.doctrine_open_transaction_logger" class="Symfony\Bridge\Doctrine\Messenger\DoctrineOpenTransactionLoggerMiddleware" abstract="true">
+      <argument type="service" id="doctrine"/>
+      <argument>null</argument>
+      <argument type="service" id="monolog.logger"/>
     </service>
     <service id="messenger.transport.doctrine.factory" class="Symfony\Component\Messenger\Bridge\Doctrine\Transport\DoctrineTransportFactory">
       <tag name="messenger.transport_factory"/>
@@ -4313,7 +4320,7 @@
       <tag name="doctrine.event_subscriber"/>
       <argument type="tagged_iterator" tag="messenger.receiver"/>
     </service>
-    <service id=".1_ServiceLocator~WqI7B8p" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".1_ServiceLocator~Vq4eb01" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <argument type="collection"/>
     </service>
     <service id="doctrine.orm.proxy_cache_warmer" class="Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer">
@@ -4503,17 +4510,17 @@
       <call method="setMetadataCache">
         <argument type="service" id="cache.doctrine.orm.default.metadata"/>
       </call>
-      <call method="setQueryCacheImpl">
-        <argument type="service" id="cache.doctrine.orm.default.query.compatibility_layer"/>
+      <call method="setQueryCache">
+        <argument type="service" id="cache.doctrine.orm.default.query"/>
       </call>
-      <call method="setResultCacheImpl">
-        <argument type="service" id="cache.doctrine.orm.default.result.compatibility_layer"/>
+      <call method="setResultCache">
+        <argument type="service" id="cache.doctrine.orm.default.result"/>
       </call>
       <call method="setMetadataDriverImpl">
         <argument type="service" id=".doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/doctrine/orm/Proxies</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/doctrine/orm/Proxies</argument>
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -4543,7 +4550,7 @@
     <service id="doctrine.orm.default_annotation_metadata_driver" class="Doctrine\ORM\Mapping\Driver\AnnotationDriver">
       <argument type="service" id="annotations.cached_reader"/>
       <argument type="collection">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/src/Entity</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\src\Entity</argument>
       </argument>
     </service>
     <service id="cache.doctrine.orm.default.metadata" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
@@ -4609,7 +4616,7 @@
     <service id="doctrine.migrations.configuration" class="Doctrine\Migrations\Configuration\Configuration">
       <call method="addMigrationsDirectory">
         <argument>DoctrineMigrations</argument>
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/migrations</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/migrations</argument>
       </call>
       <call method="setAllOrNothing">
         <argument>false</argument>
@@ -4794,7 +4801,7 @@
         <argument key="source" type="service">
           <service class="Symfony\Component\VarDumper\Dumper\ContextProvider\SourceContextProvider">
             <argument>UTF-8</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</argument>
             <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
           </service>
         </argument>
@@ -4816,7 +4823,7 @@
         <argument key="source" type="service">
           <service class="Symfony\Component\VarDumper\Dumper\ContextProvider\SourceContextProvider">
             <argument>UTF-8</argument>
-            <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio</argument>
+            <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</argument>
             <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
           </service>
         </argument>
@@ -4881,7 +4888,7 @@
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
         <argument key="autoescape">name</argument>
-        <argument key="cache">/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/twig</argument>
+        <argument key="cache">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
@@ -4996,82 +5003,82 @@
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator">
       <argument type="service" id="kernel"/>
       <argument type="collection">
-        <argument key="/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/twig-bridge/Resources/views/Email">email</argument>
-        <argument key="/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
+        <argument key="C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\twig-bridge/Resources/views/Email">email</argument>
+        <argument key="C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\twig-bridge/Resources/views/Form">null</argument>
       </argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/templates</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/templates</argument>
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <tag name="container.service_subscriber" id="twig"/>
-      <argument type="service" id=".service_locator.v.Wwsjy.twig.template_cache_warmer"/>
+      <argument type="service" id=".service_locator.aq4MYft.twig.template_cache_warmer"/>
       <argument type="service" id="twig.template_iterator"/>
     </service>
     <service id="twig.loader.native_filesystem" class="Twig\Loader\FilesystemLoader">
       <tag name="twig.loader"/>
       <argument type="collection"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</argument>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>!Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/doctrine-migrations-bundle/Resources/views</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
         <argument>DoctrineMigrations</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/doctrine/doctrine-migrations-bundle/Resources/views</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
         <argument>!DoctrineMigrations</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/debug-bundle/Resources/views</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\debug-bundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/debug-bundle/Resources/views</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\debug-bundle/Resources/views</argument>
         <argument>!Debug</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/web-profiler-bundle/Resources/views</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\web-profiler-bundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/web-profiler-bundle/Resources/views</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\web-profiler-bundle/Resources/views</argument>
         <argument>!WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-bundle/Resources/views</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-bundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/security-bundle/Resources/views</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\security-bundle/Resources/views</argument>
         <argument>!Security</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/nelmio/api-doc-bundle/Resources/views</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\nelmio\api-doc-bundle/Resources/views</argument>
         <argument>NelmioApiDoc</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/nelmio/api-doc-bundle/Resources/views</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\nelmio\api-doc-bundle/Resources/views</argument>
         <argument>!NelmioApiDoc</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/templates</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/templates</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/twig-bridge/Resources/views/Email</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\twig-bridge/Resources/views/Email</argument>
         <argument>email</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/twig-bridge/Resources/views/Email</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\twig-bridge/Resources/views/Email</argument>
         <argument>!email</argument>
       </call>
       <call method="addPath">
-        <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+        <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\vendor\symfony\twig-bridge/Resources/views/Form</argument>
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader"/>
@@ -5097,7 +5104,7 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension">
@@ -5182,9 +5189,9 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="twig"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</argument>
       <argument>%kernel.bundles_metadata%</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/templates</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/templates</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
       <call method="setName">
         <argument>debug:twig</argument>
@@ -5218,7 +5225,7 @@
       <argument type="service" id="twig"/>
       <argument>%data_collector.templates%</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</argument>
     </service>
     <service id="web_profiler.controller.router" class="Symfony\Bundle\WebProfilerBundle\Controller\RouterController" public="true">
       <argument type="service" id="profiler" on-invalid="null"/>
@@ -5269,7 +5276,7 @@
       <argument type="service" id="web_profiler.csp.handler"/>
       <argument type="service" id="data_collector.dump" on-invalid="ignore"/>
     </service>
-    <service id=".1_ServiceLocator~nhydsfT" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".1_ServiceLocator~s.NkFBD" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="webpack_encore.entrypoint_lookup_collection" type="service_closure" id="webpack_encore.entrypoint_lookup_collection"/>
@@ -5293,7 +5300,7 @@
     </service>
     <service id="webpack_encore.twig_entry_files_extension" class="Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension">
       <tag name="twig.extension"/>
-      <argument type="service" id=".1_ServiceLocator~nhydsfT"/>
+      <argument type="service" id=".1_ServiceLocator~s.NkFBD"/>
     </service>
     <service id="webpack_encore.twig_stimulus_extension" class="Symfony\WebpackEncoreBundle\Twig\StimulusTwigExtension">
       <tag name="twig.extension"/>
@@ -5301,12 +5308,12 @@
     <service id="webpack_encore.entrypoint_lookup.cache_warmer" class="Symfony\WebpackEncoreBundle\CacheWarmer\EntrypointCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="collection">
-        <argument key="_default">/home/user/Documents/GitHub/monitorio/symfony_monitorio/public/build/entrypoints.json</argument>
+        <argument key="_default">C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/public/build/entrypoints.json</argument>
       </argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/webpack_encore.cache.php</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/webpack_encore.cache.php</argument>
     </service>
     <service id="webpack_encore.cache" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter">
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/webpack_encore.cache.php</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/webpack_encore.cache.php</argument>
       <argument type="service" id="cache.webpack_encore"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -5332,7 +5339,7 @@
     </service>
     <service id="webpack_encore.entrypoint_lookup[_default]" class="Symfony\WebpackEncoreBundle\Asset\EntrypointLookup">
       <tag name="kernel.reset" method="reset"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/public/build/entrypoints.json</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/public/build/entrypoints.json</argument>
       <argument>null</argument>
       <argument>_default</argument>
       <argument>true</argument>
@@ -5837,7 +5844,7 @@
       <tag name="container.no_preload"/>
       <argument>%security.firewalls%</argument>
       <argument type="service" id=".service_locator.zJyh7qS"/>
-      <argument type="service" id=".service_locator.XsyfP82"/>
+      <argument type="service" id=".service_locator.jlyTfzM"/>
       <argument type="collection">
         <argument key="main" type="collection"/>
       </argument>
@@ -6108,7 +6115,7 @@
     <service id="monolog.processor.psr_log_message" class="Monolog\Processor\PsrLogMessageProcessor"/>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
       <tag name="kernel.reset" method="reset"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/log/dev.log</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\log/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -6130,8 +6137,8 @@
       <argument type="service" id="filesystem"/>
       <argument type="service" id="maker.autoloader_util"/>
       <argument type="service" id="maker.file_link_formatter"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/templates</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio/templates</argument>
     </service>
     <service id="maker.autoloader_finder" class="Symfony\Bundle\MakerBundle\Util\ComposerAutoloaderFinder">
       <argument>App</argument>
@@ -6223,7 +6230,7 @@
       <tag name="maker.command"/>
       <argument type="service" id="maker.file_manager"/>
       <argument type="service" id="maker.doctrine_helper"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</argument>
       <argument type="service" id="maker.generator"/>
       <argument type="service" id="maker.entity_class_generator"/>
     </service>
@@ -6295,7 +6302,7 @@
     </service>
     <service id="maker.maker.make_migration" class="Symfony\Bundle\MakerBundle\Maker\MakeMigration">
       <tag name="maker.command"/>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio</argument>
     </service>
     <service id="sensio_framework_extra.controller.listener" class="Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener">
       <tag name="kernel.event_subscriber"/>
@@ -6338,7 +6345,7 @@
       <tag name="container.hot_path"/>
       <argument type="service" id="sensio_framework_extra.view.guesser"/>
       <call method="setContainer">
-        <argument type="service" id=".service_locator.aNklfos.sensio_framework_extra.view.listener"/>
+        <argument type="service" id=".service_locator.PQK0.4p.sensio_framework_extra.view.listener"/>
       </call>
     </service>
     <service id="sensio_framework_extra.cache.listener" class="Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener">
@@ -6692,12 +6699,12 @@
     <service id="lexik_jwt_authentication.security.jwt_user_provider" class="Lexik\Bundle\JWTAuthenticationBundle\Security\User\JWTUserProvider">
       <argument></argument>
     </service>
-    <service id=".1_TokenStorage~5Itdnzc" class="Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage"/>
+    <service id=".1_TokenStorage~zAFlYY7" class="Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage"/>
     <service id="lexik_jwt_authentication.security.guard.jwt_token_authenticator" class="Lexik\Bundle\JWTAuthenticationBundle\Security\Guard\JWTTokenAuthenticator">
       <argument type="service" id="lexik_jwt_authentication.jwt_manager"/>
       <argument type="service" id="debug.event_dispatcher"/>
       <argument type="service" id="lexik_jwt_authentication.extractor.chain_extractor"/>
-      <argument type="service" id=".1_TokenStorage~5Itdnzc"/>
+      <argument type="service" id=".1_TokenStorage~zAFlYY7"/>
     </service>
     <service id="lexik_jwt_authentication.check_config_command" class="Lexik\Bundle\JWTAuthenticationBundle\Command\CheckConfigCommand">
       <tag name="console.command" command="lexik:jwt:check-config"/>
@@ -7050,88 +7057,88 @@
         <argument>Creates a new migration based on database changes</argument>
       </call>
     </service>
-    <service id=".service_locator.bRdave9" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.KfwZsne" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="response" type="service_closure" id=".errored..service_locator.bRdave9.Symfony\Component\HttpFoundation\Response"/>
+        <argument key="response" type="service_closure" id=".errored..service_locator.KfwZsne.Symfony\Component\HttpFoundation\Response"/>
       </argument>
     </service>
-    <service id=".service_locator.xUrKPVU" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.KfbR3DY" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="loader" type="service_closure" id=".errored..service_locator.xUrKPVU.Symfony\Component\Config\Loader\LoaderInterface"/>
+        <argument key="loader" type="service_closure" id=".errored..service_locator.KfbR3DY.Symfony\Component\Config\Loader\LoaderInterface"/>
       </argument>
     </service>
-    <service id=".service_locator.8mWyt.U" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.SDxDLzt" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="profilRepository" type="service_closure" id="App\Repository\ProfilRepository"/>
       </argument>
     </service>
-    <service id=".service_locator.aKM6MDa" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.l2QwsaZ" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="entityManager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
       </argument>
     </service>
-    <service id=".service_locator.0_4O5OK" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.1UrvX8b" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="entityManager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
         <argument key="profilRepository" type="service_closure" id="App\Repository\ProfilRepository"/>
       </argument>
     </service>
-    <service id=".service_locator.Q1F27w5" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator..Ae5NXw" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="userRepository" type="service_closure" id="App\Repository\UserRepository"/>
       </argument>
     </service>
-    <service id=".service_locator.lwhU4dN" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.cktIvAG" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="UserRepository" type="service_closure" id="App\Repository\UserRepository"/>
       </argument>
     </service>
-    <service id=".service_locator.aY7OgVe" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.vjFAvyX" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="UserRepository" type="service_closure" id="App\Repository\UserRepository"/>
         <argument key="entityManager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
       </argument>
     </service>
-    <service id=".service_locator.No3PygL" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.asNm1Nb" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="App\Controller\ProfilController::delete" type="service_closure" id=".service_locator.0_4O5OK"/>
-        <argument key="App\Controller\ProfilController::edit" type="service_closure" id=".service_locator.0_4O5OK"/>
-        <argument key="App\Controller\ProfilController::index" type="service_closure" id=".service_locator.8mWyt.U"/>
-        <argument key="App\Controller\ProfilController::new" type="service_closure" id=".service_locator.aKM6MDa"/>
-        <argument key="App\Controller\ProfilController::show" type="service_closure" id=".service_locator.8mWyt.U"/>
-        <argument key="App\Controller\UserController::delete" type="service_closure" id=".service_locator.aY7OgVe"/>
-        <argument key="App\Controller\UserController::edit" type="service_closure" id=".service_locator.aY7OgVe"/>
-        <argument key="App\Controller\UserController::index" type="service_closure" id=".service_locator.Q1F27w5"/>
-        <argument key="App\Controller\UserController::new" type="service_closure" id=".service_locator.aKM6MDa"/>
-        <argument key="App\Controller\UserController::show" type="service_closure" id=".service_locator.lwhU4dN"/>
-        <argument key="App\Kernel::loadRoutes" type="service_closure" id=".service_locator.xUrKPVU"/>
-        <argument key="App\Kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
-        <argument key="App\Kernel::terminate" type="service_closure" id=".service_locator.bRdave9"/>
-        <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.xUrKPVU"/>
-        <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
-        <argument key="kernel::terminate" type="service_closure" id=".service_locator.bRdave9"/>
-        <argument key="App\Controller\ProfilController:delete" type="service_closure" id=".service_locator.0_4O5OK"/>
-        <argument key="App\Controller\ProfilController:edit" type="service_closure" id=".service_locator.0_4O5OK"/>
-        <argument key="App\Controller\ProfilController:index" type="service_closure" id=".service_locator.8mWyt.U"/>
-        <argument key="App\Controller\ProfilController:new" type="service_closure" id=".service_locator.aKM6MDa"/>
-        <argument key="App\Controller\ProfilController:show" type="service_closure" id=".service_locator.8mWyt.U"/>
-        <argument key="App\Controller\UserController:delete" type="service_closure" id=".service_locator.aY7OgVe"/>
-        <argument key="App\Controller\UserController:edit" type="service_closure" id=".service_locator.aY7OgVe"/>
-        <argument key="App\Controller\UserController:index" type="service_closure" id=".service_locator.Q1F27w5"/>
-        <argument key="App\Controller\UserController:new" type="service_closure" id=".service_locator.aKM6MDa"/>
-        <argument key="App\Controller\UserController:show" type="service_closure" id=".service_locator.lwhU4dN"/>
-        <argument key="kernel:loadRoutes" type="service_closure" id=".service_locator.xUrKPVU"/>
-        <argument key="kernel:registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
-        <argument key="kernel:terminate" type="service_closure" id=".service_locator.bRdave9"/>
+        <argument key="App\Controller\ProfilController::delete" type="service_closure" id=".service_locator.1UrvX8b"/>
+        <argument key="App\Controller\ProfilController::edit" type="service_closure" id=".service_locator.1UrvX8b"/>
+        <argument key="App\Controller\ProfilController::index" type="service_closure" id=".service_locator.SDxDLzt"/>
+        <argument key="App\Controller\ProfilController::new" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\ProfilController::show" type="service_closure" id=".service_locator.SDxDLzt"/>
+        <argument key="App\Controller\UserController::delete" type="service_closure" id=".service_locator.vjFAvyX"/>
+        <argument key="App\Controller\UserController::edit" type="service_closure" id=".service_locator.vjFAvyX"/>
+        <argument key="App\Controller\UserController::index" type="service_closure" id=".service_locator..Ae5NXw"/>
+        <argument key="App\Controller\UserController::new" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\UserController::show" type="service_closure" id=".service_locator.cktIvAG"/>
+        <argument key="App\Kernel::loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
+        <argument key="App\Kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
+        <argument key="App\Kernel::terminate" type="service_closure" id=".service_locator.KfwZsne"/>
+        <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
+        <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
+        <argument key="kernel::terminate" type="service_closure" id=".service_locator.KfwZsne"/>
+        <argument key="App\Controller\ProfilController:delete" type="service_closure" id=".service_locator.1UrvX8b"/>
+        <argument key="App\Controller\ProfilController:edit" type="service_closure" id=".service_locator.1UrvX8b"/>
+        <argument key="App\Controller\ProfilController:index" type="service_closure" id=".service_locator.SDxDLzt"/>
+        <argument key="App\Controller\ProfilController:new" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\ProfilController:show" type="service_closure" id=".service_locator.SDxDLzt"/>
+        <argument key="App\Controller\UserController:delete" type="service_closure" id=".service_locator.vjFAvyX"/>
+        <argument key="App\Controller\UserController:edit" type="service_closure" id=".service_locator.vjFAvyX"/>
+        <argument key="App\Controller\UserController:index" type="service_closure" id=".service_locator..Ae5NXw"/>
+        <argument key="App\Controller\UserController:new" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\UserController:show" type="service_closure" id=".service_locator.cktIvAG"/>
+        <argument key="kernel:loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
+        <argument key="kernel:registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
+        <argument key="kernel:terminate" type="service_closure" id=".service_locator.KfwZsne"/>
       </argument>
     </service>
     <service id=".service_locator.19_mNxd" class="Symfony\Component\DependencyInjection\ServiceLocator">
@@ -7285,14 +7292,6 @@
         <argument key="stof_doctrine_extensions.listener.timestampable" type="service_closure" id="stof_doctrine_extensions.listener.timestampable"/>
       </argument>
     </service>
-    <service id="cache.doctrine.orm.default.query.compatibility_layer" class="Doctrine\Common\Cache\CacheProvider">
-      <argument type="service" id="cache.doctrine.orm.default.query"/>
-      <factory class="Doctrine\Common\Cache\Psr6\DoctrineProvider" method="wrap"/>
-    </service>
-    <service id="cache.doctrine.orm.default.result.compatibility_layer" class="Doctrine\Common\Cache\CacheProvider">
-      <argument type="service" id="cache.doctrine.orm.default.result"/>
-      <factory class="Doctrine\Common\Cache\Psr6\DoctrineProvider" method="wrap"/>
-    </service>
     <service id=".service_locator.HMKJoZ0" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -7310,6 +7309,9 @@
     <service id=".doctrine.orm.default_metadata_driver" class="Doctrine\Bundle\DoctrineBundle\Mapping\MappingDriver">
       <argument type="service" id=".doctrine.orm.default_metadata_driver.inner"/>
       <argument type="service" id=".service_locator.KLVvNIq"/>
+    </service>
+    <service id="doctrine.dbal.logging_middleware.default" class="Doctrine\DBAL\Logging\Middleware">
+      <argument type="service" id="monolog.logger.doctrine"/>
     </service>
     <service id="debug.security.voter.security.access.authenticated_voter" class="Symfony\Component\Security\Core\Authorization\Voter\TraceableVoter">
       <argument type="service" id="security.access.authenticated_voter"/>
@@ -7558,7 +7560,7 @@
         <argument key="translation.loader.yml" type="service_closure" id="translation.loader.yml"/>
       </argument>
     </service>
-    <service id=".service_locator.mx0UMmY" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.GNc8e5B" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="doctrine" type="service_closure" id="doctrine" on-invalid="ignore"/>
@@ -7577,77 +7579,77 @@
         <argument key="twig" type="service_closure" id="twig" on-invalid="ignore"/>
       </argument>
     </service>
-    <service id=".service_locator.mx0UMmY.App\Controller\ProfilController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.GNc8e5B.App\Controller\ProfilController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\ProfilController"/>
       <argument>App\Controller\ProfilController</argument>
       <argument type="service" id="service_container"/>
-      <factory service=".service_locator.mx0UMmY" method="withContext"/>
+      <factory service=".service_locator.GNc8e5B" method="withContext"/>
     </service>
-    <service id=".service_locator.mx0UMmY.App\Controller\UserController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.GNc8e5B.App\Controller\UserController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\UserController"/>
       <argument>App\Controller\UserController</argument>
       <argument type="service" id="service_container"/>
-      <factory service=".service_locator.mx0UMmY" method="withContext"/>
+      <factory service=".service_locator.GNc8e5B" method="withContext"/>
     </service>
-    <service id=".service_locator.wSgjnB6" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.J4b.DPX" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="translator" type="service_closure" id="translator.data_collector"/>
       </argument>
     </service>
-    <service id=".service_locator.wSgjnB6.translation.warmer" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.J4b.DPX.translation.warmer" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="translation.warmer"/>
       <argument>translation.warmer</argument>
       <argument type="service" id="service_container"/>
-      <factory service=".service_locator.wSgjnB6" method="withContext"/>
+      <factory service=".service_locator.J4b.DPX" method="withContext"/>
     </service>
-    <service id=".service_locator.NUKe30Y" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.491LSII" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="routing.loader" type="service_closure" id="routing.loader"/>
       </argument>
     </service>
-    <service id=".service_locator.NUKe30Y.router.default" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.491LSII.router.default" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="router.default"/>
       <argument>router.default</argument>
       <argument type="service" id="service_container"/>
-      <factory service=".service_locator.NUKe30Y" method="withContext"/>
+      <factory service=".service_locator.491LSII" method="withContext"/>
     </service>
-    <service id=".service_locator.oCg4uHe" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.HLwzKIm" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="router" type="service_closure" id="router.default"/>
       </argument>
     </service>
-    <service id=".service_locator.oCg4uHe.router.cache_warmer" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.HLwzKIm.router.cache_warmer" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="router.cache_warmer"/>
       <argument>router.cache_warmer</argument>
       <argument type="service" id="service_container"/>
-      <factory service=".service_locator.oCg4uHe" method="withContext"/>
+      <factory service=".service_locator.HLwzKIm" method="withContext"/>
     </service>
-    <service id=".service_locator.v.Wwsjy" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.aq4MYft" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="twig" type="service_closure" id="twig"/>
       </argument>
     </service>
-    <service id=".service_locator.v.Wwsjy.twig.template_cache_warmer" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.aq4MYft.twig.template_cache_warmer" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="twig.template_cache_warmer"/>
       <argument>twig.template_cache_warmer</argument>
       <argument type="service" id="service_container"/>
-      <factory service=".service_locator.v.Wwsjy" method="withContext"/>
+      <factory service=".service_locator.aq4MYft" method="withContext"/>
     </service>
-    <service id=".service_locator.aNklfos" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.PQK0.4p" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="twig" type="service_closure" id="twig" on-invalid="ignore"/>
       </argument>
     </service>
-    <service id=".service_locator.aNklfos.sensio_framework_extra.view.listener" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.PQK0.4p.sensio_framework_extra.view.listener" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="sensio_framework_extra.view.listener"/>
       <argument>sensio_framework_extra.view.listener</argument>
       <argument type="service" id="service_container"/>
-      <factory service=".service_locator.aNklfos" method="withContext"/>
+      <factory service=".service_locator.PQK0.4p" method="withContext"/>
     </service>
     <service id=".service_locator.XXv1IfR" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
@@ -7655,20 +7657,20 @@
         <argument key="reverse_container" type="service_closure" id="reverse_container" on-invalid="ignore_uninitialized"/>
       </argument>
     </service>
-    <service id=".service_locator.XsyfP82" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.jlyTfzM" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="event_dispatcher" type="service_closure" id="debug.event_dispatcher"/>
         <argument key="security.event_dispatcher.main" type="service_closure" id="security.event_dispatcher.main"/>
       </argument>
     </service>
-    <service id=".service_locator.XWmhzGa" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.kODoftA" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="kernel" type="service_closure" id="kernel"/>
       </argument>
     </service>
-    <service id=".service_locator.Kr.dDlB" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.1ZPWTRB" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="env" type="service_closure" id="container.getenv"/>
@@ -7684,7 +7686,7 @@
         <argument key="session_factory" type="service_closure" id="session.factory" on-invalid="ignore"/>
       </argument>
     </service>
-    <service id=".service_locator.UkE3SaZ" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.dw8O4oN" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="browser" type="service_closure" id="notifier.channel.browser"/>
@@ -7763,12 +7765,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.No3PygL"/>
+      <argument type="service" id=".service_locator.asNm1Nb"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.No3PygL"/>
+      <argument type="service" id=".service_locator.asNm1Nb"/>
     </service>
     <service id="debug.traced.messenger.bus.default.inner" class="Symfony\Component\Messenger\MessageBus">
       <argument type="iterator">
@@ -7795,8 +7797,8 @@
         <argument>App\Entity</argument>
       </call>
     </service>
-    <service id=".errored..service_locator.bRdave9.Symfony\Component\HttpFoundation\Response" class="Symfony\Component\HttpFoundation\Response"/>
-    <service id=".errored..service_locator.xUrKPVU.Symfony\Component\Config\Loader\LoaderInterface" class="Symfony\Component\Config\Loader\LoaderInterface"/>
+    <service id=".errored..service_locator.KfwZsne.Symfony\Component\HttpFoundation\Response" class="Symfony\Component\HttpFoundation\Response"/>
+    <service id=".errored..service_locator.KfbR3DY.Symfony\Component\Config\Loader\LoaderInterface" class="Symfony\Component\Config\Loader\LoaderInterface"/>
     <service id=".console.command.about.lazy" class="Symfony\Component\Console\Command\LazyCommand">
       <argument>about</argument>
       <argument type="collection"/>
@@ -8266,7 +8268,7 @@
     </service>
     <service id="console.command_loader" class="Symfony\Component\Console\CommandLoader\ContainerCommandLoader" public="true">
       <tag name="container.no_preload"/>
-      <argument type="service" id=".service_locator.Bz3ozu3"/>
+      <argument type="service" id=".service_locator.OCBsJ3W"/>
       <argument type="collection">
         <argument key="about">console.command.about</argument>
         <argument key="assets:install">console.command.assets_install</argument>
@@ -8376,7 +8378,7 @@
         <argument key="make:migration">maker.auto_command.make_migration</argument>
       </argument>
     </service>
-    <service id=".service_locator.Bz3ozu3" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.OCBsJ3W" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="console.command.about" type="service_closure" id=".console.command.about.lazy"/>
@@ -8485,86 +8487,86 @@
       </argument>
     </service>
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
-      <argument>cIk8reXVm3</argument>
+      <argument>yWnEGDdN5t</argument>
       <argument>0</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/pools/app</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>+VScJO2AlK</argument>
+      <argument>ajScAIM2Ri</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>gFWQaesZVr</argument>
+      <argument>cdcMIqMrFt</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>VVMF6KNiT8</argument>
+      <argument>gm+2YrKROE</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>iYJthYRnyF</argument>
+      <argument>fLScRkCGEh</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.property_info.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>f7cuoScoeE</argument>
+      <argument>nSyVeDWLbG</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.messenger.restart_workers_signal.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
-      <argument>wX-tmtvJj4</argument>
+      <argument>NJZHzmOzru</argument>
       <argument>0</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/pools/app</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.validator_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>9V0Y-eg8Jv</argument>
+      <argument>KhjD5p9sac</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.doctrine.orm.default.result.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
     <service id="cache.doctrine.orm.default.query.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
     <service id="cache.webpack_encore.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>iVdNL9ubD1</argument>
+      <argument>iom7xrBP4x</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.security_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>DkAMwtmvGA</argument>
+      <argument>KhO5ahjv5G</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/home/user/Documents/GitHub/monitorio/symfony_monitorio/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\LENOVO\Desktop\monitorio\monitorio\symfony_monitorio\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -8696,8 +8698,8 @@
     <service id="doctrine.orm.metadata.annotation_reader" alias="annotations.cached_reader"/>
     <service id="doctrine.orm.entity_manager" alias="doctrine.orm.default_entity_manager" public="true"/>
     <service id="doctrine.orm.default_metadata_cache" alias="cache.doctrine.orm.default.metadata"/>
-    <service id="doctrine.orm.default_result_cache" alias="cache.doctrine.orm.default.result.compatibility_layer"/>
-    <service id="doctrine.orm.default_query_cache" alias="cache.doctrine.orm.default.query.compatibility_layer"/>
+    <service id="doctrine.orm.default_result_cache" alias="cache.doctrine.orm.default.result"/>
+    <service id="doctrine.orm.default_query_cache" alias="cache.doctrine.orm.default.query"/>
     <service id="Doctrine\ORM\EntityManagerInterface $defaultEntityManager" alias="doctrine.orm.default_entity_manager"/>
     <service id="doctrine.orm.default_entity_manager.event_manager" alias="doctrine.dbal.default_connection.event_manager"/>
     <service id="doctrine.migrations.metadata_storage" alias="doctrine.migrations.storage.table_storage"/>
@@ -8758,7 +8760,7 @@
     <service id="lexik_jwt_authentication.key_loader" alias="lexik_jwt_authentication.key_loader.raw" public="true"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.No3PygL"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.asNm1Nb"/>
     <service id="session" alias=".session.do-not-use" public="true">
       <deprecated package="symfony/framework-bundle" version="5.3">The "%alias_id%" service and "SessionInterface" alias are deprecated, use "$requestStack-&gt;getSession()" instead.</deprecated>
     </service>
@@ -8782,16 +8784,16 @@
     <service id="Psr\Log\LoggerInterface $deprecationLogger" alias="monolog.logger.deprecation"/>
     <service id=".service_locator.80edgLI" alias="messenger.receiver_locator"/>
     <service id=".service_locator.h8Jkkd2" alias="messenger.retry_strategy_locator"/>
-    <service id=".service_locator.XDGmiR3" alias=".1_ServiceLocator~nhydsfT"/>
+    <service id=".service_locator.XDGmiR3" alias=".1_ServiceLocator~s.NkFBD"/>
     <service id=".service_locator.9L433w3" alias="nelmio_api_doc.generator_locator"/>
     <service id=".service_locator.0GV1BZZ" alias=".service_locator.gSv9zYw"/>
-    <service id=".service_locator.J9y3BGg" alias=".service_locator.aY7OgVe"/>
-    <service id=".service_locator.HE1r.f_" alias=".service_locator.No3PygL"/>
+    <service id=".service_locator.y_v1a.D" alias=".service_locator.vjFAvyX"/>
+    <service id=".service_locator.Gi32zCB" alias=".service_locator.asNm1Nb"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.4SViqzL" alias=".service_locator.RVhubgW"/>
     <service id=".service_locator.3ZTkjac" alias=".service_locator.sRlROVa"/>
     <service id=".service_locator.O24_MAy" alias=".service_locator.yY.p4P7"/>
-    <service id=".service_locator.0ghLsew" alias=".service_locator.mx0UMmY"/>
+    <service id=".service_locator.W9y3dzm" alias=".service_locator.GNc8e5B"/>
     <service id="validator" alias="debug.validator" public="true"/>
     <service id="event_dispatcher" alias="debug.event_dispatcher" public="true"/>
     <service id="controller_resolver" alias="debug.controller_resolver"/>
@@ -8813,17 +8815,17 @@
     <service id="messenger.bus.default" alias="debug.traced.messenger.bus.default"/>
     <service id="http_client" alias=".debug.http_client"/>
     <service id="doctrine.orm.default_metadata_driver" alias=".doctrine.orm.default_metadata_driver"/>
-    <service id=".service_locator.FatRZu2" alias=".service_locator.bRdave9"/>
-    <service id=".service_locator.uo5c0SP" alias=".service_locator.xUrKPVU"/>
-    <service id=".service_locator.bbr4Uh8" alias=".service_locator.8mWyt.U"/>
-    <service id=".service_locator.bInR.ll" alias=".service_locator.aKM6MDa"/>
-    <service id=".service_locator.cuBBz6F" alias=".service_locator.0_4O5OK"/>
-    <service id=".service_locator.HO7.gFw" alias=".service_locator.Q1F27w5"/>
-    <service id=".service_locator.l4OHQcT" alias=".service_locator.lwhU4dN"/>
-    <service id=".service_locator.mXo921K" alias=".service_locator.aY7OgVe"/>
-    <service id=".service_locator.A740LBW" alias=".service_locator.mx0UMmY"/>
+    <service id=".service_locator._5g_Wvc" alias=".service_locator.KfwZsne"/>
+    <service id=".service_locator.JBAFp66" alias=".service_locator.KfbR3DY"/>
+    <service id=".service_locator.BLS5DwZ" alias=".service_locator.SDxDLzt"/>
+    <service id=".service_locator.Er0_7SX" alias=".service_locator.l2QwsaZ"/>
+    <service id=".service_locator.Lhrw.b1" alias=".service_locator.1UrvX8b"/>
+    <service id=".service_locator.8PQa8Mp" alias=".service_locator..Ae5NXw"/>
+    <service id=".service_locator.UIaQbw5" alias=".service_locator.cktIvAG"/>
+    <service id=".service_locator.lKpUp7b" alias=".service_locator.vjFAvyX"/>
+    <service id=".service_locator.Wd_D6Iy" alias=".service_locator.GNc8e5B"/>
     <service id=".service_locator.L0rFhJm" alias=".service_locator.GVyCdgr"/>
-    <service id=".service_locator.pFwChgS" alias=".service_locator.UkE3SaZ"/>
+    <service id=".service_locator.9YCWxeJ" alias=".service_locator.dw8O4oN"/>
     <service id=".service_locator.aa1PbBb" alias=".service_locator.nLgZj7R"/>
   </services>
 </container>

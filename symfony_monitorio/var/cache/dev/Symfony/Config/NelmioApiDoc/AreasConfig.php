@@ -8,7 +8,7 @@ use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 
 
 /**
- * This class is automatically generated to help creating config.
+ * This class is automatically generated to help in creating a config.
  */
 class AreasConfig 
 {
@@ -18,6 +18,7 @@ class AreasConfig
     private $withAnnotation;
     private $disableDefaultRoutes;
     private $documentation;
+    private $_usedProperties = [];
     
     /**
      * @param ParamConfigurator|list<mixed|ParamConfigurator> $value
@@ -25,6 +26,7 @@ class AreasConfig
      */
     public function pathPatterns($value): self
     {
+        $this->_usedProperties['pathPatterns'] = true;
         $this->pathPatterns = $value;
     
         return $this;
@@ -36,6 +38,7 @@ class AreasConfig
      */
     public function hostPatterns($value): self
     {
+        $this->_usedProperties['hostPatterns'] = true;
         $this->hostPatterns = $value;
     
         return $this;
@@ -47,6 +50,7 @@ class AreasConfig
      */
     public function namePatterns($value): self
     {
+        $this->_usedProperties['namePatterns'] = true;
         $this->namePatterns = $value;
     
         return $this;
@@ -60,6 +64,7 @@ class AreasConfig
      */
     public function withAnnotation($value): self
     {
+        $this->_usedProperties['withAnnotation'] = true;
         $this->withAnnotation = $value;
     
         return $this;
@@ -73,6 +78,7 @@ class AreasConfig
      */
     public function disableDefaultRoutes($value): self
     {
+        $this->_usedProperties['disableDefaultRoutes'] = true;
         $this->disableDefaultRoutes = $value;
     
         return $this;
@@ -84,6 +90,7 @@ class AreasConfig
      */
     public function documentation(string $key, $value): self
     {
+        $this->_usedProperties['documentation'] = true;
         $this->documentation[$key] = $value;
     
         return $this;
@@ -92,32 +99,38 @@ class AreasConfig
     public function __construct(array $value = [])
     {
     
-        if (isset($value['path_patterns'])) {
+        if (array_key_exists('path_patterns', $value)) {
+            $this->_usedProperties['pathPatterns'] = true;
             $this->pathPatterns = $value['path_patterns'];
             unset($value['path_patterns']);
         }
     
-        if (isset($value['host_patterns'])) {
+        if (array_key_exists('host_patterns', $value)) {
+            $this->_usedProperties['hostPatterns'] = true;
             $this->hostPatterns = $value['host_patterns'];
             unset($value['host_patterns']);
         }
     
-        if (isset($value['name_patterns'])) {
+        if (array_key_exists('name_patterns', $value)) {
+            $this->_usedProperties['namePatterns'] = true;
             $this->namePatterns = $value['name_patterns'];
             unset($value['name_patterns']);
         }
     
-        if (isset($value['with_annotation'])) {
+        if (array_key_exists('with_annotation', $value)) {
+            $this->_usedProperties['withAnnotation'] = true;
             $this->withAnnotation = $value['with_annotation'];
             unset($value['with_annotation']);
         }
     
-        if (isset($value['disable_default_routes'])) {
+        if (array_key_exists('disable_default_routes', $value)) {
+            $this->_usedProperties['disableDefaultRoutes'] = true;
             $this->disableDefaultRoutes = $value['disable_default_routes'];
             unset($value['disable_default_routes']);
         }
     
-        if (isset($value['documentation'])) {
+        if (array_key_exists('documentation', $value)) {
+            $this->_usedProperties['documentation'] = true;
             $this->documentation = $value['documentation'];
             unset($value['documentation']);
         }
@@ -130,22 +143,22 @@ class AreasConfig
     public function toArray(): array
     {
         $output = [];
-        if (null !== $this->pathPatterns) {
+        if (isset($this->_usedProperties['pathPatterns'])) {
             $output['path_patterns'] = $this->pathPatterns;
         }
-        if (null !== $this->hostPatterns) {
+        if (isset($this->_usedProperties['hostPatterns'])) {
             $output['host_patterns'] = $this->hostPatterns;
         }
-        if (null !== $this->namePatterns) {
+        if (isset($this->_usedProperties['namePatterns'])) {
             $output['name_patterns'] = $this->namePatterns;
         }
-        if (null !== $this->withAnnotation) {
+        if (isset($this->_usedProperties['withAnnotation'])) {
             $output['with_annotation'] = $this->withAnnotation;
         }
-        if (null !== $this->disableDefaultRoutes) {
+        if (isset($this->_usedProperties['disableDefaultRoutes'])) {
             $output['disable_default_routes'] = $this->disableDefaultRoutes;
         }
-        if (null !== $this->documentation) {
+        if (isset($this->_usedProperties['documentation'])) {
             $output['documentation'] = $this->documentation;
         }
     
