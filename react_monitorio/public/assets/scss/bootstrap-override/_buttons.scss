@@ -70,8 +70,10 @@
   font-weight: $font-alt-weight-normal;
   outline: none;
   line-height: 1;
+ 
   &.btn-secondary:focus, &.btn-secondary.focus {
     box-shadow: none;
+    
   }
   .os-icon {
     font-size: $font-size-base;
@@ -102,6 +104,7 @@
     }
     span + .os-icon {
       margin-left: $btn-padding-x-sm;
+      
     }
   }
   &.btn-rounded {

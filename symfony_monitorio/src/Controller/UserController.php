@@ -32,7 +32,7 @@ class UserController extends AbstractController
     /**
      * @Route("/new", name="User_new", methods={"PUT"})
      */
-    public function new(Request $request, EntityManagerInterface $entityManager,ProfilRepository $profilRepository): Response
+    public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
        
         try{

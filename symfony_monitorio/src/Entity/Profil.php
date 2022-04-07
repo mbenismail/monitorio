@@ -3,11 +3,12 @@
 namespace App\Entity;
 
 use App\Repository\ProfilRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Doctrine\ODM\MongoDB\Mapping\Annotations as ODM;
 
-use OpenApi\Annotations as OA;
 
 /**
  * @ORM\Entity(repositoryClass=ProfilRepository::class)
@@ -22,13 +23,15 @@ class Profil implements \JsonSerializable
      */
     private $id;
 
+
+ 
     /**
-     * @OA\Property(type="string", maxLength=255)
+     * @ORM\Column(type="string", length=255)
      */
     private $NomProfil;
 
     /**
-     * @OA\Property(type="string", maxLength=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $ProfilDesc;
 
@@ -37,7 +40,6 @@ class Profil implements \JsonSerializable
      */
     private $ProfilSys;
 
-    
 
          /**
      * @var \DateTime $DateCreat
@@ -69,6 +71,21 @@ class Profil implements \JsonSerializable
      */
     private $UserModif;
 
+    /**
+     * @ORM\ManyToMany(targetEntity=Permission::class, mappedBy="Profiles")
+     */
+    private $permissions;
+
+    public function __construct()
+    {
+        $this->permissions = new ArrayCollection();
+    }
+
+  
+
+    
+
+   
     public function getId(): ?int
     {
         return $this->id;
@@ -163,12 +180,12 @@ class Profil implements \JsonSerializable
    * @throws \Exception
    * @ORM\PrePersist()
    */
-//   public function beforeSave(){
+  public function beforeSave(){
 
-//     $this->DateCreat = new \DateTime('now', new \DateTimeZone('Africa/Tunis'));
-//     $this->DateModif = new \DateTime('now', new \DateTimeZone('Africa/Tunis'));
+    $this->DateCreat = new \DateTime('now', new \DateTimeZone('Africa/Tunis'));
+    $this->DateModif = new \DateTime('now', new \DateTimeZone('Africa/Tunis'));
 
-//    }
+   }
  
    /**
     * Specify data which should be serialized to JSON
@@ -185,4 +202,33 @@ class Profil implements \JsonSerializable
      "ProfilSys" => $this->getProfilSys(),
     ];
    }
+
+   /**
+    * @return Collection<int, Permission>
+    */
+   public function getPermissions(): Collection
+   {
+       return $this->permissions;
+   }
+
+   public function addPermission(Permission $permission): self
+   {
+       if (!$this->permissions->contains($permission)) {
+           $this->permissions[] = $permission;
+           $permission->addProfile($this);
+       }
+
+       return $this;
+   }
+
+   public function removePermission(Permission $permission): self
+   {
+       if ($this->permissions->removeElement($permission)) {
+           $permission->removeProfile($this);
+       }
+
+       return $this;
+   }
+
+   
 }

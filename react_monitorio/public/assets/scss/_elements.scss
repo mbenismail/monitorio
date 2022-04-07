@@ -32,6 +32,7 @@
 
 .element-wrapper {
   padding-bottom: 3rem;
+  margin-left: 50px;
   .btn + .btn {
     margin-left: 1rem;
   }
@@ -175,6 +176,7 @@
 .element-box {
   padding: 1.5rem 2rem;
   margin-bottom: 1rem;
+
   @extend .box-style;
   &.less-padding {
     padding: 1rem;

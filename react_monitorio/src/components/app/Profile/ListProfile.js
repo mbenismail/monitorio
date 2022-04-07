@@ -2,45 +2,35 @@
 import { render } from "@testing-library/react";
 import React ,{useState,useEffect} from 'react';
 import { useHistory } from "react-router-dom";
-
 function AppListProfil() {
-  const [Profile, setProfile] = useState([]);
- 
- 
+  const [Profile, setProfile] = useState([]); 
  async function deleteProfile(id) {
   
- if(window.confirm("Are you sure?"))
-   {
 
+   
     let result= await fetch('http://localhost:8000/api/profile/delete/'+id ,{
       method:'DELETE',
       headers: {"Content-Type":"application/json"}
-
   });
 
   console.log(result)
   result= await result.json();
   setProfile((Profile.filter(profil => profil.id !== id)));
   //window.location.reload(false);
-  
   console.log(result)
   console.warn(result)
   
-  }
  }
-
-
 const fetchData = async () => {
-  const response = await fetch("http://localhost:8000/api/profile/index")
-  const data = await response.json()
-  //console.log(data)
+const response = await fetch("http://localhost:8000/api/profile/index")
+const data = await response.json()
+  // console.log(data)
   setProfile(data)
 }
 
-
-
 useEffect(() => {
   fetchData()
+
 }, [])
 
 let history = useHistory();
@@ -129,7 +119,7 @@ let history = useHistory();
           {profil.ProfilDesc}
           </td>
           <td >
-         { profil.ProfilSys ? 'True' : 'false'}
+         { profil.ProfilSys ? (<i className="os-icon os-icon-checkmark"/>  ) : (<i className="os-icon os-icon-x"/> )}
           </td>
           <td></td>
           <td>
@@ -137,11 +127,14 @@ let history = useHistory();
           </td>
           <td className="row-actions">
             <a href="#"><i className="os-icon os-icon-ui-49" onClick={()=>{
-          history.push("/Edit profile")
-        }}  /></a><a href="#" > 
-              <i className="os-icon os-icon-grid-10" />
-              </a><a className="danger" href="#"onClick={()=>deleteProfile(profil.id)} >
-                <i className="os-icon os-icon-ui-15" /></a>
+          history.push("/Editprofile/" +profil.id)
+        }}/></a>
+        <a href="#" > 
+              <i className="os-icon os-icon-eye"/>
+        </a>
+        <a className="danger" href="#"onClick={()=>deleteProfile(profil.id)} >
+                <i className="os-icon os-icon-ui-15" />
+        </a>
           </td>
         </tr>  
  

@@ -177,7 +177,8 @@
       @include media-breakpoint-down($breakpoint) {
         display: block;
         width: 60%;
-        overflow-x: auto;
+        height:100px ;
+        overflow: scroll;
         -webkit-overflow-scrolling: touch;
 
         // Prevent double border on horizontal scroll due to use of `display: block;`

@@ -27,10 +27,12 @@ function AppProfil() {
 let resJson = await res.json();
 console.log(resJson)
 if (resJson.status === 200) {
+
   setNomProfil("");
   setProfilDesc("");
   setProfilSys("");
   setMessage("User created successfully");
+  window.location = "";
 } else {
   setMessage("Some error occured");
 }
@@ -94,14 +96,7 @@ render()
                           </div>
                         </div>
                       </fieldset>
-                      <div className="form-group">
-                       
-                      </div>
-                  
-                      
-                      <div className="form-group">
-                        
-                      </div>
+                    
                       <div className="form-check">
                         <label className="form-check-label"><input value={ProfilSys}
                         onChange={(e) => setProfilSys(!ProfilSys)}
@@ -110,8 +105,7 @@ render()
                      
                       <div className="form-buttons-w">
                         <button 
-                        className="btn btn-primary" type="submit"  onClick={()=>{
-                          history.push("/List profiles")}}> Submit</button>
+                        className="btn btn-primary" type="submit"  > Submit</button>
                       </div>
                     </form>
                   </div>

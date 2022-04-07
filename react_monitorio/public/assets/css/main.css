@@ -189,6 +189,26 @@ small {
   font-size: 80%;
 }
 
+
+.table-responsive:-webkit-scrollbar {
+  width: 0.5px !important;
+  height: 0.5px !important;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #eee;
+  border-radius: 0;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #bbb;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+
 sub,
 sup {
   position: relative;
@@ -2757,8 +2777,9 @@ pre code {
 .table-responsive {
   display: block;
   width: 80%;
+  height: 20% ;
   margin-left: 100px;
-  overflow-x: auto;
+  overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -11881,7 +11902,7 @@ select.form-control.rounded {
 .form-buttons-w {
   margin-top: 1.5rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
 }
 
 .form-buttons-w.compact {
@@ -12175,6 +12196,7 @@ legend:before {
   color: rgba(0, 0, 0, 0.6);
   font-size: 0.81rem;
 }
+
 
 .toggled-buttons.solid .btn-toggled.on, .toggled-buttons.solid .btn-toggled:hover {
   background-color: #047bf8;
@@ -16846,8 +16868,14 @@ body.menu-side-right .layout-w {
  #1. Element Wrapper Styles
 */
 .element-wrapper {
-  padding-bottom: 20rem;
+  /* padding-bottom: 20rem;
+  margin-left: 150px;
+  padding-top: 50px; */
 }
+
+
+
+
 
 .element-wrapper .btn + .btn, .element-wrapper .all-wrapper .fc-button + .btn, .all-wrapper .element-wrapper .fc-button + .btn, .element-wrapper .all-wrapper .btn + .fc-button, .all-wrapper .element-wrapper .btn + .fc-button, .element-wrapper .all-wrapper .fc-button + .fc-button, .all-wrapper .element-wrapper .fc-button + .fc-button {
   margin-left: 1rem;
@@ -20039,6 +20067,7 @@ a.with-avatar span {
 
 .os-icon-x:before {
   content: "\ea87";
+  color: red;
 }
 
 .os-icon-x-circle:before {
@@ -20294,8 +20323,10 @@ a.with-avatar span {
   content: "\e965";
 }
 
+
 .os-icon-checkmark:before {
   content: "\e961";
+  color: var(--green);
 }
 
 .os-icon-ui-93:before {

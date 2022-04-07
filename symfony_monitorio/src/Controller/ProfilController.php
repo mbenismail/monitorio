@@ -63,26 +63,22 @@ class ProfilController extends AbstractController
 
     return $this->json($data);
     }
-
-     /**
-     * @Route("/new", name="profil_new", methods={"GET", "POST"})
-     * *@OA\Tag(name="profil_new")
+   /**
+     * @Route("/new", name="Profile_new", methods={"POST"})
      */
-    
-    public function new(Request $request, EntityManagerInterface $entityManager ): Response
-    {
-       
-        try{
+    public function new(Request $request, EntityManagerInterface $entityManager): Response
+    { try{
             $request = $this->transformJsonBody($request);
-            if (!$request || !$request->get('NomProfil') ||!$request->request->get('ProfilDesc')){
+            if (!$request || !$request->get('NomProfil') || !$request->request->get('ProfilDesc') || !$request->request->get('ProfilSys')){
              throw new \Exception();
             } 
             $profil = new Profil();
             $profil->setNomProfil($request->get('NomProfil'));
             $profil->setProfilDesc($request->get('ProfilDesc'));
+            $profil->setProfilSys($request->get('ProfilSys'));
+
             $entityManager->persist($profil);
             $entityManager->flush();
-
             $data = [
              'status' => 200,
              'success' => "Profile added successfully",
@@ -99,10 +95,11 @@ class ProfilController extends AbstractController
           }
        
     
+    
 
 
     /**
-     * @Route("/{id}", name="profil_show", methods={"GET"})
+     * @Route("/show/{id}", name="profil_show", methods={"GET"})
      */
     public function show(ProfilRepository $profilRepository, $id)
     {
@@ -117,7 +114,6 @@ class ProfilController extends AbstractController
     }
     return $this->response($profil);
    }
-    
 
     /**
      * @Route("/edit/{id}", name="profil_edit", methods={"PUT"})

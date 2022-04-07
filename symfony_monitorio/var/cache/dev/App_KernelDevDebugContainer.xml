@@ -421,6 +421,13 @@
       <tag name="controller.service_arguments"/>
       <tag name="routing.route_loader"/>
     </service>
+    <service id="App\Controller\PermissionController" class="App\Controller\PermissionController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.mx0UMmY.App\Controller\PermissionController"/>
+      </call>
+    </service>
     <service id="App\Controller\ProfilController" class="App\Controller\ProfilController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -443,6 +450,10 @@
     </service>
     <service id="App\Form\UserType" class="App\Form\UserType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
+    </service>
+    <service id="App\Repository\PermissionRepository" class="App\Repository\PermissionRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
     </service>
     <service id="App\Repository\ProfilRepository" class="App\Repository\ProfilRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
@@ -4335,7 +4346,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory">
-      <argument type="service" id=".service_locator.HMKJoZ0"/>
+      <argument type="service" id=".service_locator.AfToI9P"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -6732,6 +6743,9 @@
         <argument>lexik:jwt:generate-keypair</argument>
       </call>
     </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\PermissionController" class="App\Controller\PermissionController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\PermissionController" class="App\Controller\PermissionController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\PermissionController" class="App\Controller\PermissionController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\ProfilController" class="App\Controller\ProfilController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\ProfilController" class="App\Controller\ProfilController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\ProfilController" class="App\Controller\ProfilController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -6744,6 +6758,8 @@
     <service id=".abstract.instanceof.App\Form\ProfilType" class="App\Form\ProfilType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\UserType" class="App\Form\UserType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\UserType" class="App\Form\UserType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\PermissionRepository" class="App\Repository\PermissionRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\PermissionRepository" class="App\Repository\PermissionRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\ProfilRepository" class="App\Repository\ProfilRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\ProfilRepository" class="App\Repository\ProfilRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" abstract="true"/>
@@ -7063,6 +7079,32 @@
         <argument key="loader" type="service_closure" id=".errored..service_locator.xUrKPVU.Symfony\Component\Config\Loader\LoaderInterface"/>
       </argument>
     </service>
+    <service id=".service_locator.hsnnqmr" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="permissionRepository" type="service_closure" id="App\Repository\PermissionRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.dKvJI5e" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="entityManager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
+        <argument key="permissionRepository" type="service_closure" id="App\Repository\PermissionRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.vy4R6N6" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="PermissionRepository" type="service_closure" id="App\Repository\PermissionRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.O.fYUTG" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="PermissionRepository" type="service_closure" id="App\Repository\PermissionRepository"/>
+        <argument key="entityManager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
+      </argument>
+    </service>
     <service id=".service_locator.8mWyt.U" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -7088,14 +7130,6 @@
         <argument key="userRepository" type="service_closure" id="App\Repository\UserRepository"/>
       </argument>
     </service>
-    <service id=".errored.is_zF9g" class="App\Controller\ProfilRepository"/>
-    <service id=".service_locator.ebhKswk" class="Symfony\Component\DependencyInjection\ServiceLocator">
-      <tag name="container.service_locator"/>
-      <argument type="collection">
-        <argument key="entityManager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
-        <argument key="profilRepository" type="service_closure" id=".errored.is_zF9g"/>
-      </argument>
-    </service>
     <service id=".service_locator.lwhU4dN" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -7109,9 +7143,14 @@
         <argument key="entityManager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
       </argument>
     </service>
-    <service id=".service_locator.mSBcF__" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.3jSMpmI" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Controller\PermissionController::add" type="service_closure" id=".service_locator.dKvJI5e"/>
+        <argument key="App\Controller\PermissionController::delete" type="service_closure" id=".service_locator.O.fYUTG"/>
+        <argument key="App\Controller\PermissionController::edit" type="service_closure" id=".service_locator.O.fYUTG"/>
+        <argument key="App\Controller\PermissionController::index" type="service_closure" id=".service_locator.hsnnqmr"/>
+        <argument key="App\Controller\PermissionController::show" type="service_closure" id=".service_locator.vy4R6N6"/>
         <argument key="App\Controller\ProfilController::delete" type="service_closure" id=".service_locator.0_4O5OK"/>
         <argument key="App\Controller\ProfilController::edit" type="service_closure" id=".service_locator.0_4O5OK"/>
         <argument key="App\Controller\ProfilController::index" type="service_closure" id=".service_locator.8mWyt.U"/>
@@ -7120,7 +7159,7 @@
         <argument key="App\Controller\UserController::delete" type="service_closure" id=".service_locator.aY7OgVe"/>
         <argument key="App\Controller\UserController::edit" type="service_closure" id=".service_locator.aY7OgVe"/>
         <argument key="App\Controller\UserController::index" type="service_closure" id=".service_locator.Q1F27w5"/>
-        <argument key="App\Controller\UserController::new" type="service_closure" id=".service_locator.ebhKswk"/>
+        <argument key="App\Controller\UserController::new" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\UserController::show" type="service_closure" id=".service_locator.lwhU4dN"/>
         <argument key="App\Kernel::loadRoutes" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="App\Kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
@@ -7128,6 +7167,11 @@
         <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="kernel::terminate" type="service_closure" id=".service_locator.bRdave9"/>
+        <argument key="App\Controller\PermissionController:add" type="service_closure" id=".service_locator.dKvJI5e"/>
+        <argument key="App\Controller\PermissionController:delete" type="service_closure" id=".service_locator.O.fYUTG"/>
+        <argument key="App\Controller\PermissionController:edit" type="service_closure" id=".service_locator.O.fYUTG"/>
+        <argument key="App\Controller\PermissionController:index" type="service_closure" id=".service_locator.hsnnqmr"/>
+        <argument key="App\Controller\PermissionController:show" type="service_closure" id=".service_locator.vy4R6N6"/>
         <argument key="App\Controller\ProfilController:delete" type="service_closure" id=".service_locator.0_4O5OK"/>
         <argument key="App\Controller\ProfilController:edit" type="service_closure" id=".service_locator.0_4O5OK"/>
         <argument key="App\Controller\ProfilController:index" type="service_closure" id=".service_locator.8mWyt.U"/>
@@ -7136,7 +7180,7 @@
         <argument key="App\Controller\UserController:delete" type="service_closure" id=".service_locator.aY7OgVe"/>
         <argument key="App\Controller\UserController:edit" type="service_closure" id=".service_locator.aY7OgVe"/>
         <argument key="App\Controller\UserController:index" type="service_closure" id=".service_locator.Q1F27w5"/>
-        <argument key="App\Controller\UserController:new" type="service_closure" id=".service_locator.ebhKswk"/>
+        <argument key="App\Controller\UserController:new" type="service_closure" id=".service_locator.aKM6MDa"/>
         <argument key="App\Controller\UserController:show" type="service_closure" id=".service_locator.lwhU4dN"/>
         <argument key="kernel:loadRoutes" type="service_closure" id=".service_locator.xUrKPVU"/>
         <argument key="kernel:registerContainerConfiguration" type="service_closure" id=".service_locator.xUrKPVU"/>
@@ -7302,9 +7346,10 @@
       <argument type="service" id="cache.doctrine.orm.default.result"/>
       <factory class="Doctrine\Common\Cache\Psr6\DoctrineProvider" method="wrap"/>
     </service>
-    <service id=".service_locator.HMKJoZ0" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.AfToI9P" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Repository\PermissionRepository" type="service_closure" id="App\Repository\PermissionRepository"/>
         <argument key="App\Repository\ProfilRepository" type="service_closure" id="App\Repository\ProfilRepository"/>
         <argument key="App\Repository\UserRepository" type="service_closure" id="App\Repository\UserRepository"/>
       </argument>
@@ -7586,6 +7631,12 @@
         <argument key="twig" type="service_closure" id="twig" on-invalid="ignore"/>
       </argument>
     </service>
+    <service id=".service_locator.mx0UMmY.App\Controller\PermissionController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\PermissionController"/>
+      <argument>App\Controller\PermissionController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.mx0UMmY" method="withContext"/>
+    </service>
     <service id=".service_locator.mx0UMmY.App\Controller\ProfilController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\ProfilController"/>
       <argument>App\Controller\ProfilController</argument>
@@ -7772,12 +7823,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.mSBcF__"/>
+      <argument type="service" id=".service_locator.3jSMpmI"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.mSBcF__"/>
+      <argument type="service" id=".service_locator.3jSMpmI"/>
     </service>
     <service id="debug.traced.messenger.bus.default.inner" class="Symfony\Component\Messenger\MessageBus">
       <argument type="iterator">
@@ -8767,7 +8818,7 @@
     <service id="lexik_jwt_authentication.key_loader" alias="lexik_jwt_authentication.key_loader.raw" public="true"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.mSBcF__"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.3jSMpmI"/>
     <service id="session" alias=".session.do-not-use" public="true">
       <deprecated package="symfony/framework-bundle" version="5.3">The "%alias_id%" service and "SessionInterface" alias are deprecated, use "$requestStack-&gt;getSession()" instead.</deprecated>
     </service>
@@ -8794,8 +8845,9 @@
     <service id=".service_locator.XDGmiR3" alias=".1_ServiceLocator~nhydsfT"/>
     <service id=".service_locator.9L433w3" alias="nelmio_api_doc.generator_locator"/>
     <service id=".service_locator.0GV1BZZ" alias=".service_locator.gSv9zYw"/>
+    <service id=".service_locator.y4IXOuZ" alias=".service_locator.O.fYUTG"/>
     <service id=".service_locator.J9y3BGg" alias=".service_locator.aY7OgVe"/>
-    <service id=".service_locator.a4CCt4O" alias=".service_locator.mSBcF__"/>
+    <service id=".service_locator.ZpeJcQj" alias=".service_locator.3jSMpmI"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.4SViqzL" alias=".service_locator.RVhubgW"/>
     <service id=".service_locator.3ZTkjac" alias=".service_locator.sRlROVa"/>
@@ -8824,11 +8876,14 @@
     <service id="doctrine.orm.default_metadata_driver" alias=".doctrine.orm.default_metadata_driver"/>
     <service id=".service_locator.FatRZu2" alias=".service_locator.bRdave9"/>
     <service id=".service_locator.uo5c0SP" alias=".service_locator.xUrKPVU"/>
+    <service id=".service_locator.1AXmcIS" alias=".service_locator.hsnnqmr"/>
+    <service id=".service_locator.JU_hWfI" alias=".service_locator.dKvJI5e"/>
+    <service id=".service_locator.ddOYWgS" alias=".service_locator.vy4R6N6"/>
+    <service id=".service_locator.lKex4hT" alias=".service_locator.O.fYUTG"/>
     <service id=".service_locator.bbr4Uh8" alias=".service_locator.8mWyt.U"/>
     <service id=".service_locator.bInR.ll" alias=".service_locator.aKM6MDa"/>
     <service id=".service_locator.cuBBz6F" alias=".service_locator.0_4O5OK"/>
     <service id=".service_locator.HO7.gFw" alias=".service_locator.Q1F27w5"/>
-    <service id=".service_locator.e41cVyB" alias=".service_locator.ebhKswk"/>
     <service id=".service_locator.l4OHQcT" alias=".service_locator.lwhU4dN"/>
     <service id=".service_locator.mXo921K" alias=".service_locator.aY7OgVe"/>
     <service id=".service_locator.A740LBW" alias=".service_locator.mx0UMmY"/>

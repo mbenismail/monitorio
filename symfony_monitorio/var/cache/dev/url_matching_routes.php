@@ -8,8 +8,10 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
+        '/api/permission/index' => [[['_route' => 'permissionapp_permission_index', '_controller' => 'App\\Controller\\PermissionController::index'], null, ['GET' => 0], null, false, false, null]],
+        '/api/permission/new' => [[['_route' => 'permissionpermission_add', '_controller' => 'App\\Controller\\PermissionController::add'], null, ['POST' => 0], null, false, false, null]],
         '/api/profile/index' => [[['_route' => 'profilsapp_profil_index', '_controller' => 'App\\Controller\\ProfilController::index'], null, ['GET' => 0], null, false, false, null]],
-        '/api/profile/new' => [[['_route' => 'profilsprofil_new', '_controller' => 'App\\Controller\\ProfilController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        '/api/profile/new' => [[['_route' => 'profilsProfile_new', '_controller' => 'App\\Controller\\ProfilController::new'], null, ['POST' => 0], null, false, false, null]],
         '/api/Users/index' => [[['_route' => 'user_index', '_controller' => 'App\\Controller\\UserController::index'], null, ['GET' => 0], null, false, false, null]],
         '/api/Users/new' => [[['_route' => 'User_new', '_controller' => 'App\\Controller\\UserController::new'], null, ['PUT' => 0], null, false, false, null]],
         '/api/doc' => [[['_route' => 'app.swagger_ui', '_controller' => 'nelmio_api_doc.controller.swagger'], null, ['GET' => 0], null, false, false, null]],
@@ -22,48 +24,58 @@ return [
     [ // $regexpList
         0 => '{^(?'
                 .'|/api/(?'
-                    .'|profile/(?'
-                        .'|([^/]++)(*:34)'
-                        .'|edit/([^/]++)(*:54)'
-                        .'|delete/([^/]++)(*:76)'
+                    .'|p(?'
+                        .'|ermission/(?'
+                            .'|show/([^/]++)(*:45)'
+                            .'|edit/([^/]++)(*:65)'
+                            .'|delete/([^/]++)(*:87)'
+                        .')'
+                        .'|rofile/(?'
+                            .'|show/([^/]++)(*:118)'
+                            .'|edit/([^/]++)(*:139)'
+                            .'|delete/([^/]++)(*:162)'
+                        .')'
                     .')'
                     .'|Users/(?'
-                        .'|show/([^/]++)(*:106)'
-                        .'|([^/]++)/edit(*:127)'
-                        .'|delete/([^/]++)(*:150)'
+                        .'|show/([^/]++)(*:194)'
+                        .'|([^/]++)/edit(*:215)'
+                        .'|delete/([^/]++)(*:238)'
                     .')'
                 .')'
                 .'|/_(?'
-                    .'|error/(\\d+)(?:\\.([^/]++))?(*:191)'
-                    .'|wdt/([^/]++)(*:211)'
+                    .'|error/(\\d+)(?:\\.([^/]++))?(*:279)'
+                    .'|wdt/([^/]++)(*:299)'
                     .'|profiler/([^/]++)(?'
                         .'|/(?'
-                            .'|search/results(*:257)'
-                            .'|router(*:271)'
+                            .'|search/results(*:345)'
+                            .'|router(*:359)'
                             .'|exception(?'
-                                .'|(*:291)'
-                                .'|\\.css(*:304)'
+                                .'|(*:379)'
+                                .'|\\.css(*:392)'
                             .')'
                         .')'
-                        .'|(*:314)'
+                        .'|(*:402)'
                     .')'
                 .')'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
-        34 => [[['_route' => 'profilsprofil_show', '_controller' => 'App\\Controller\\ProfilController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        54 => [[['_route' => 'profilsprofil_edit', '_controller' => 'App\\Controller\\ProfilController::edit'], ['id'], ['PUT' => 0], null, false, true, null]],
-        76 => [[['_route' => 'profilsprofil_delete', '_controller' => 'App\\Controller\\ProfilController::delete'], ['id'], ['DELETE' => 0], null, false, true, null]],
-        106 => [[['_route' => 'User_show', '_controller' => 'App\\Controller\\UserController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        127 => [[['_route' => 'user_edit', '_controller' => 'App\\Controller\\UserController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        150 => [[['_route' => 'users_delete', '_controller' => 'App\\Controller\\UserController::delete'], ['id'], ['DELETE' => 0], null, false, true, null]],
-        191 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
-        211 => [[['_route' => '_wdt', '_controller' => 'web_profiler.controller.profiler::toolbarAction'], ['token'], null, null, false, true, null]],
-        257 => [[['_route' => '_profiler_search_results', '_controller' => 'web_profiler.controller.profiler::searchResultsAction'], ['token'], null, null, false, false, null]],
-        271 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
-        291 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
-        304 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
-        314 => [
+        45 => [[['_route' => 'permissionPermission_show', '_controller' => 'App\\Controller\\PermissionController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        65 => [[['_route' => 'permissionPermission_edit', '_controller' => 'App\\Controller\\PermissionController::edit'], ['id'], ['PUT' => 0], null, false, true, null]],
+        87 => [[['_route' => 'permissionPermission_delete', '_controller' => 'App\\Controller\\PermissionController::delete'], ['id'], ['DELETE' => 0], null, false, true, null]],
+        118 => [[['_route' => 'profilsprofil_show', '_controller' => 'App\\Controller\\ProfilController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        139 => [[['_route' => 'profilsprofil_edit', '_controller' => 'App\\Controller\\ProfilController::edit'], ['id'], ['PUT' => 0], null, false, true, null]],
+        162 => [[['_route' => 'profilsprofil_delete', '_controller' => 'App\\Controller\\ProfilController::delete'], ['id'], ['DELETE' => 0], null, false, true, null]],
+        194 => [[['_route' => 'User_show', '_controller' => 'App\\Controller\\UserController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        215 => [[['_route' => 'user_edit', '_controller' => 'App\\Controller\\UserController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        238 => [[['_route' => 'users_delete', '_controller' => 'App\\Controller\\UserController::delete'], ['id'], ['DELETE' => 0], null, false, true, null]],
+        279 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
+        299 => [[['_route' => '_wdt', '_controller' => 'web_profiler.controller.profiler::toolbarAction'], ['token'], null, null, false, true, null]],
+        345 => [[['_route' => '_profiler_search_results', '_controller' => 'web_profiler.controller.profiler::searchResultsAction'], ['token'], null, null, false, false, null]],
+        359 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
+        379 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
+        392 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
+        402 => [
             [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
